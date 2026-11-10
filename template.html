@@ -1,0 +1,232 @@
+<title>UROP Shortlist</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Archivo+Narrow:wght@500;600;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+:root{
+  --ground:#F4F5F7; --surface:#FFFFFF; --ink:#16181D; --muted:#5E6370; --faint:#8B909B;
+  --line:#E0E2E7; --accent:#A31F34; --accent-soft:#F6E4E7; --gold:#9A6B00; --gold-soft:#FBF1DA;
+  --ai:#2F5BB7; --ai-soft:#E4ECFA; --ok:#1F7A4D; --ok-soft:#E2F2E9; --closed:#9AA0AA;
+  --mono:"JetBrains Mono",ui-monospace,Menlo,monospace;
+  --narrow:"Archivo Narrow","Arial Narrow",Arial,sans-serif;
+  --sans:Archivo,system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  color-scheme:dark;
+  --ground:#111317; --surface:#1A1D23; --ink:#E9EAED; --muted:#A3A8B3; --faint:#737985;
+  --line:#2B2F37; --accent:#E86A7E; --accent-soft:#3A1E24; --gold:#E0B04A; --gold-soft:#342A14;
+  --ai:#8FB0F2; --ai-soft:#1D2940; --ok:#6CCB98; --ok-soft:#17301F; --closed:#5A606B;
+}}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --ground:#111317; --surface:#1A1D23; --ink:#E9EAED; --muted:#A3A8B3; --faint:#737985;
+  --line:#2B2F37; --accent:#E86A7E; --accent-soft:#3A1E24; --gold:#E0B04A; --gold-soft:#342A14;
+  --ai:#8FB0F2; --ai-soft:#1D2940; --ok:#6CCB98; --ok-soft:#17301F; --closed:#5A606B;
+}
+*{box-sizing:border-box}
+body{background:var(--ground);color:var(--ink);font:15px/1.5 var(--sans);padding-inline:16px;padding-block:28px 64px}
+.wrap{max-width:1040px;margin:0 auto;display:flex;flex-direction:column;gap:22px}
+a{color:inherit}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+header{display:flex;flex-direction:column;gap:10px}
+.eyebrow{font:600 12px/1 var(--narrow);letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+h1{font:700 clamp(28px,4.6vw,40px)/1.05 var(--narrow);letter-spacing:-.01em;margin:0;text-wrap:balance}
+.lede{color:var(--muted);max-width:68ch;margin:0}
+.stats{display:flex;flex-wrap:wrap;gap:8px 22px;font:500 13px/1.3 var(--sans);color:var(--muted)}
+.stats b{font:600 13px var(--mono);color:var(--ink)}
+
+.dates{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.dates div{background:var(--surface);padding:12px 14px;display:flex;flex-direction:column;gap:2px}
+.dates .k{font:600 11px/1.2 var(--narrow);letter-spacing:.1em;text-transform:uppercase;color:var(--faint)}
+.dates .v{font:600 15px/1.3 var(--sans)}
+.dates .s{font-size:13px;color:var(--muted)}
+.dates .past .v{color:var(--closed);text-decoration:line-through}
+.dates .soon .v{color:var(--accent)}
+
+.controls{display:flex;flex-wrap:wrap;gap:10px;align-items:center;position:sticky;top:env(safe-area-inset-top,0px);z-index:2;background:var(--ground);padding-block:10px;border-bottom:1px solid var(--line)}
+.controls input[type=search]{flex:1 1 220px;min-width:0;font:inherit;padding:8px 12px;border:1px solid var(--line);border-radius:8px;background:var(--surface);color:var(--ink)}
+.seg{display:flex;border:1px solid var(--line);border-radius:8px;overflow:hidden;background:var(--surface)}
+.seg button{font:600 13px var(--narrow);letter-spacing:.03em;padding:8px 12px;border:0;background:transparent;color:var(--muted);cursor:pointer}
+.seg button[aria-pressed=true]{background:var(--ink);color:var(--ground)}
+.toggle{display:flex;align-items:center;gap:6px;font-size:13px;color:var(--muted);cursor:pointer;user-select:none}
+.toggle input{accent-color:var(--accent)}
+.count{font:600 12px var(--mono);color:var(--faint);margin-left:auto}
+
+.band{display:flex;flex-direction:column;gap:0}
+.band h2{font:700 13px/1 var(--narrow);letter-spacing:.1em;text-transform:uppercase;margin:0 0 8px;display:flex;gap:10px;align-items:baseline}
+.band h2 span{font:500 13px var(--sans);letter-spacing:0;text-transform:none;color:var(--faint)}
+.list{background:var(--surface);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+
+.row{display:grid;grid-template-columns:44px 1fr auto;gap:4px 14px;padding:14px 16px;border-top:1px solid var(--line);align-items:start}
+.row:first-child{border-top:0}
+.row.closed{opacity:.55}
+.rank{font:600 13px/1.6 var(--mono);color:var(--faint);font-variant-numeric:tabular-nums}
+.main{display:flex;flex-direction:column;gap:5px;min-width:0}
+.title{font:600 16px/1.3 var(--sans);text-decoration:none;text-wrap:pretty}
+.title:hover{text-decoration:underline;text-decoration-color:var(--accent);text-underline-offset:3px}
+.meta{font-size:13px;color:var(--muted);display:flex;flex-wrap:wrap;gap:2px 12px}
+.meta .pay{font-family:var(--mono);font-size:12px;color:var(--ink)}
+.note{font-size:13.5px;color:var(--ink);max-width:78ch}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{font:600 11px/1 var(--narrow);letter-spacing:.06em;text-transform:uppercase;padding:4px 7px;border-radius:5px;white-space:nowrap}
+.chip.remote{background:var(--ok-soft);color:var(--ok)}
+.chip.spon{background:var(--gold-soft);color:var(--gold)}
+.chip.ai{background:var(--ai-soft);color:var(--ai)}
+.chip.new{background:var(--accent);color:#fff}
+.chip.shut{background:transparent;color:var(--closed);border:1px solid var(--closed)}
+.chip.dl{background:var(--accent-soft);color:var(--accent)}
+
+.score{display:flex;flex-direction:column;align-items:flex-end;gap:6px;min-width:92px}
+.score .n{font:600 20px/1 var(--mono);font-variant-numeric:tabular-nums}
+.meter{display:grid;grid-template-columns:auto auto;gap:3px 6px;align-items:center;font:600 10px/1 var(--narrow);letter-spacing:.08em;color:var(--faint);text-transform:uppercase}
+.pips{display:flex;gap:2px}
+.pips i{width:9px;height:5px;border-radius:1px;background:var(--line)}
+.pips.p i.on{background:var(--gold)}
+.pips.f i.on{background:var(--ai)}
+
+.empty{padding:28px;text-align:center;color:var(--muted)}
+footer{font-size:13px;color:var(--muted);max-width:78ch;display:flex;flex-direction:column;gap:6px}
+footer code{font-family:var(--mono);font-size:12px}
+
+@media (max-width:760px){ .dates{grid-template-columns:1fr} }
+@media (max-width:620px){
+  .row{grid-template-columns:1fr auto;padding:14px 12px}
+  .rank{display:none}
+  .count{margin-left:0;width:100%}
+}
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="eyebrow">MIT ELx · UROP postings</div>
+    <h1>Your ranked UROP shortlist</h1>
+    <p class="lede">Every UROP on ELx, ranked for you. Prestige comes first: named sponsors and partners (GE&nbsp;Vernova, Lincoln Lab, NASA/JPL, US-government STTR, CERN, Brookhaven, the ISS) and marquee PIs. Then fit: AI, alignment and agents at the top, hardware welcome. Remote postings get a small bump.</p>
+    <div class="stats" id="stats"></div>
+  </header>
+
+  <div class="dates" id="dates"></div>
+
+  <div class="controls" role="search">
+    <input type="search" id="q" placeholder="Search title, PI, lab, sponsor…" aria-label="Search postings">
+    <div class="seg" role="group" aria-label="Show">
+      <button type="button" id="v-top" aria-pressed="true">Top picks</button>
+      <button type="button" id="v-all" aria-pressed="false">All</button>
+    </div>
+    <label class="toggle"><input type="checkbox" id="remote"> Remote only</label>
+    <label class="toggle"><input type="checkbox" id="closed"> Show closed</label>
+    <span class="count" id="count"></span>
+  </div>
+
+  <div id="bands"></div>
+
+  <footer>
+    <div><b>How the score works:</b> prestige × 10 + fit × 4 + 2 if remote. Prestige 3 means a named external sponsor or partner, or a Nobel-laureate PI. Prestige 2 means a marquee lab or PI, or a Mass General collaboration. Fit 5 means core AI (agents, RL, alignment or interpretability). Fit 3 means hardware, security or systems work.</div>
+    <div>MISTI and study-abroad programs are left out. Postings whose own application deadline has passed are hidden unless you turn on “Show closed”. Pay listed as “TBD” usually means UROP direct funding, and that deadline has already passed for Fall.</div>
+    <div id="src"></div>
+  </footer>
+</div>
+
+<script id="data" type="application/json">__DATA__</script>
+<script>
+(function(){
+  const D = JSON.parse(document.getElementById('data').textContent);
+  const P = D.postings;
+  const today = new Date(D.scraped + 'T12:00:00');
+  const $ = id => document.getElementById(id);
+  const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+  const state = {view:'top', q:'', remote:false, closed:false};
+  try { Object.assign(state, JSON.parse(localStorage.getItem('urop-filters')||'{}')); } catch(e){}
+
+  // Key UROP office dates (Fall 2026), from urop.mit.edu
+  const DATES = [
+    {k:'UROP direct funding · Fall', d:'2026-09-15', s:'Paid via UROP office funds'},
+    {k:'Sponsored / faculty-funded & credit · Fall', d:'2026-10-20', s:'Formal UROP application, separate from ELx'},
+    {k:'Supervisor approval · Fall', d:'2026-10-22', s:'Your PI must approve by this date'},
+  ];
+  $('dates').innerHTML = DATES.map(x => {
+    const dt = new Date(x.d+'T12:00:00'); const days = Math.round((dt - today)/864e5);
+    const cls = days < 0 ? 'past' : (days <= 30 ? 'soon' : '');
+    const when = dt.toLocaleDateString('en-US',{month:'short',day:'numeric'});
+    const rel = days < 0 ? 'passed' : days === 0 ? 'today' : `in ${days} days`;
+    return `<div class="${cls}"><span class="k">${esc(x.k)}</span><span class="v">${when} · ${rel}</span><span class="s">${esc(x.s)}</span></div>`;
+  }).join('');
+
+  const open = P.filter(p => !p.closed);
+  const nNew = P.filter(p => p.new).length;
+  $('stats').innerHTML = [
+    `<span><b>${P.length}</b> UROPs scanned</span>`,
+    `<span><b>${open.filter(p=>p.prestige>=3).length}</b> with a named sponsor</span>`,
+    `<span><b>${open.filter(p=>p.fit>=4).length}</b> strong AI fit</span>`,
+    `<span><b>${open.filter(p=>p.remote).length}</b> remote</span>`,
+    nNew ? `<span><b>${nNew}</b> new since last scan</span>` : '',
+    `<span>Scanned <b>${D.scraped}</b></span>`,
+  ].join('');
+  $('src').textContent = `Source: elx.mit.edu, ${P.length} UROP postings, scanned ${D.scraped}. Always confirm the details on ELx before you apply.`;
+
+  const BANDS = [
+    {id:'a', name:'Prestige + AI', hint:'Named sponsor or Nobel PI, and real ML/AI work', test:p => p.prestige>=3 && p.fit>=3},
+    {id:'b', name:'Marquee lab, core AI', hint:'Well-known PI or lab doing agents, RL or alignment-adjacent work', test:p => p.prestige===2 && p.fit>=4},
+    {id:'c', name:'Named sponsor, other work', hint:'Prestigious partner, but hardware, physics or data work', test:p => p.prestige>=3 && p.fit<3},
+    {id:'d', name:'Strong AI fit', hint:'Good AI work at a less famous lab', test:p => p.prestige<2 && p.fit>=4},
+    {id:'e', name:'Worth a look', hint:'Adjacent: systems, hardware, security, AI policy', test:p => p.fit===3 || (p.prestige===2 && p.fit>=2)},
+    {id:'f', name:'Everything else', hint:'Off-profile: wet lab, humanities, non-technical', test:() => true},
+  ];
+
+  const pips = (n, max, cls) => `<span class="pips ${cls}">${Array.from({length:max},(_,i)=>`<i class="${i<n?'on':''}"></i>`).join('')}</span>`;
+
+  function row(p){
+    const chips = [];
+    if (p.new) chips.push('<span class="chip new">New</span>');
+    if (p.closed) chips.push(`<span class="chip shut">Closed ${esc(p.deadline)}</span>`);
+    else if (p.deadline) chips.push(`<span class="chip dl">Apply by ${esc(p.deadline)}</span>`);
+    if (p.remote) chips.push('<span class="chip remote">Remote</span>');
+    if (p.prestige>=3) chips.push('<span class="chip spon">Sponsor / partner</span>');
+    if (p.fit>=5) chips.push('<span class="chip ai">Core AI</span>');
+    return `<article class="row${p.closed?' closed':''}">
+      <div class="rank">${String(p.rank).padStart(2,'0')}</div>
+      <div class="main">
+        <a class="title" href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.title)}</a>
+        <div class="meta"><span>${esc(p.dept)}</span><span>${esc(p.pi)}</span><span class="pay">${esc(p.pay)}</span><span>${esc(p.hrs)} h/wk</span><span>${esc(p.terms.replace(/\//g,' · '))}</span></div>
+        ${p.note ? `<div class="note">${esc(p.note)}</div>` : ''}
+        ${chips.length ? `<div class="chips">${chips.join('')}</div>` : ''}
+      </div>
+      <div class="score" aria-label="Score ${p.score}: prestige ${p.prestige} of 3, fit ${p.fit} of 5">
+        <span class="n">${p.score}</span>
+        <span class="meter"><span>Prestige</span>${pips(p.prestige,3,'p')}<span>Fit</span>${pips(p.fit,5,'f')}</span>
+      </div>
+    </article>`;
+  }
+
+  function render(){
+    const q = state.q.trim().toLowerCase();
+    let list = P.filter(p =>
+      (state.closed || !p.closed) &&
+      (!state.remote || p.remote) &&
+      (!q || [p.title,p.pi,p.dept,p.note,p.terms].join(' ').toLowerCase().includes(q)));
+    if (state.view === 'top') list = list.filter(p => p.score >= 34);
+    const used = new Set(); let html = '';
+    for (const b of BANDS){
+      const items = list.filter(p => !used.has(p.id) && b.test(p));
+      items.forEach(p => used.add(p.id));
+      if (!items.length) continue;
+      html += `<section class="band"><h2>${b.name} <span>${items.length} · ${b.hint}</span></h2><div class="list">${items.map(row).join('')}</div></section>`;
+    }
+    $('bands').innerHTML = html || '<div class="list"><div class="empty">Nothing matches these filters. Try “All” or clear the search.</div></div>';
+    $('bands').style.display = 'flex'; $('bands').style.flexDirection = 'column'; $('bands').style.gap = '22px';
+    $('count').textContent = `${list.length} shown`;
+    $('v-top').setAttribute('aria-pressed', state.view==='top');
+    $('v-all').setAttribute('aria-pressed', state.view==='all');
+    $('remote').checked = state.remote; $('closed').checked = state.closed; $('q').value = state.q;
+    try { localStorage.setItem('urop-filters', JSON.stringify(state)); } catch(e){}
+  }
+
+  $('q').addEventListener('input', e => { state.q = e.target.value; render(); });
+  $('v-top').addEventListener('click', () => { state.view='top'; render(); });
+  $('v-all').addEventListener('click', () => { state.view='all'; render(); });
+  $('remote').addEventListener('change', e => { state.remote = e.target.checked; render(); });
+  $('closed').addEventListener('change', e => { state.closed = e.target.checked; render(); });
+  render();
+})();
+</script>
