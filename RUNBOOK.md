@@ -17,7 +17,13 @@ current with every UROP on MIT ELx, ranked for the student (alanasng@mit.edu).
 ## Procedure
 1. **Chrome (Claude in Chrome extension)** — the student's Chrome is already signed in to Touchstone.
    `tabs_context_mcp {createIfEmpty:true}` → navigate to https://elx.mit.edu/ and wait ~5 s.
-   If the page shows Touchstone/Okta login, STOP: never enter credentials. Notify the student to sign in to ELx in Chrome.
+   If `tabs_context_mcp` errors or says the extension is not connected, wait ~20 s and retry, up to 3 tries.
+   Then check you actually landed on ELx: the page must show "N experiences". Blocked cases, where you STOP and report FAILED:
+   - Extension still unreachable after 3 tries → "open Chrome and make sure the Claude extension is signed in".
+   - Touchstone/Okta login page → "sign in to elx.mit.edu in Chrome". Never enter credentials.
+   - idp.mit.edu "400 Bad Request … header field exceeds server limit" → "clear Chrome's cookies for mit.edu,
+     then sign in to elx.mit.edu again" (too many stale MIT cookies; seen 2026-11-11).
+   A run that stops here has FAILED. Never report it as done or "nothing changed".
 2. Saved preference filters auto-apply (shows ~11). Clear them via JS:
    `[...document.querySelectorAll('button')].find(b=>/Clear Filters/.test(b.innerText)).click()`, wait 4 s,
    confirm the "N experiences" count is the full set (~240+).
