@@ -36,7 +36,7 @@ h1{font:700 clamp(28px,4.6vw,40px)/1.05 var(--narrow);letter-spacing:-.01em;marg
 .stats{display:flex;flex-wrap:wrap;gap:8px 22px;font:500 13px/1.3 var(--sans);color:var(--muted)}
 .stats b{font:600 13px var(--mono);color:var(--ink)}
 
-.dates{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.dates{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:10px;overflow:hidden}
 .dates div{background:var(--surface);padding:12px 14px;display:flex;flex-direction:column;gap:2px}
 .dates .k{font:600 11px/1.2 var(--narrow);letter-spacing:.1em;text-transform:uppercase;color:var(--faint)}
 .dates .v{font:600 15px/1.3 var(--sans)}
@@ -89,7 +89,8 @@ h1{font:700 clamp(28px,4.6vw,40px)/1.05 var(--narrow);letter-spacing:-.01em;marg
 footer{font-size:13px;color:var(--muted);max-width:78ch;display:flex;flex-direction:column;gap:6px}
 footer code{font-family:var(--mono);font-size:12px}
 
-@media (max-width:760px){ .dates{grid-template-columns:1fr} }
+@media (max-width:860px){ .dates{grid-template-columns:repeat(2,1fr)} }
+@media (max-width:480px){ .dates{grid-template-columns:1fr} }
 @media (max-width:620px){
   .row{grid-template-columns:1fr auto;padding:14px 12px}
   .rank{display:none}
@@ -122,7 +123,7 @@ footer code{font-family:var(--mono);font-size:12px}
 
   <footer>
     <div><b>How the score works:</b> prestige × 10 + fit × 4 + 2 if remote. Prestige 3 means a named external sponsor or partner, or a Nobel-laureate PI. Prestige 2 means a marquee lab or PI, or a Mass General collaboration. Fit 5 means core AI (agents, RL, alignment or interpretability). Fit 3 means hardware, security or systems work.</div>
-    <div>MISTI and study-abroad programs are left out. Postings whose own application deadline has passed are hidden unless you turn on “Show closed”. Pay listed as “TBD” usually means UROP direct funding, and that deadline has already passed for Fall.</div>
+    <div>MISTI and study-abroad programs are left out. Postings whose own application deadline has passed are hidden unless you turn on “Show closed”. Pay listed as “TBD” usually means UROP direct funding, for Spring, apply for that by Feb 2.</div>
     <div id="src"></div>
   </footer>
 </div>
@@ -139,11 +140,13 @@ footer code{font-family:var(--mono);font-size:12px}
   const state = {view:'top', q:'', remote:false, closed:false};
   try { Object.assign(state, JSON.parse(localStorage.getItem('urop-filters')||'{}')); } catch(e){}
 
-  // Key UROP office dates (Fall 2026), from urop.mit.edu
+  // Key UROP office dates, from urop.mit.edu
   const DATES = [
-    {k:'UROP direct funding · Fall', d:'2026-09-15', s:'Paid via UROP office funds'},
-    {k:'Sponsored / faculty-funded & credit · Fall', d:'2026-10-20', s:'Formal UROP application, separate from ELx'},
-    {k:'Supervisor approval · Fall', d:'2026-10-22', s:'Your PI must approve by this date'},
+    // Source: urop.mit.edu/deadlines/audience/students (checked 2026-11-11)
+    {k:'Sponsored / faculty-funded & credit · IAP', d:'2026-12-08', s:'Formal UROP application, separate from ELx'},
+    {k:'UROP direct funding · Spring', d:'2027-02-02', s:'Paid via UROP office funds'},
+    {k:'Sponsored / faculty-funded & credit · Spring', d:'2027-03-16', s:'Formal UROP application, separate from ELx'},
+    {k:'UROP direct funding · Summer', d:'2027-04-06', s:'Paid via UROP office funds'},
   ];
   $('dates').innerHTML = DATES.map(x => {
     const dt = new Date(x.d+'T12:00:00'); const days = Math.round((dt - today)/864e5);

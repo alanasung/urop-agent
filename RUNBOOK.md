@@ -46,5 +46,7 @@ current with every UROP on MIT ELx, ranked for the student (alanasng@mit.edu).
 9. Republish with the Artifact tool: `file_path` = /Users/alanasung/Code/urop-agent/urop_shortlist.html,
    `url` = https://claude.ai/artifact/XgZ94CmfHqdzckyWTtrUPu (read it first if the tool requires).
 10. Close the Chrome tab you opened. Report: number of new postings, any new ones scoring ≥ 34 (title, score, why, link),
-    and upcoming UROP office deadlines (Fall 2026: sponsored/credit 10/20, supervisor approval 10/22).
+    and upcoming UROP office deadlines (IAP sponsored/credit 12/08/2026; Spring direct funding 02/02/2027; Spring sponsored/credit 03/16/2027;
+    Summer direct funding 04/06/2027). When these pass, update `DATES` in template.html from
+    https://urop.mit.edu/deadlines/audience/students/.
     If nothing new, say so in one line.
