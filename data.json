@@ -1,25 +1,6 @@
 {
- "scraped": "2026-09-23",
+ "scraped": "2026-11-11",
  "postings": [
-  {
-   "id": "0fc11241-d013-4892-b638-b5b04997f5ea",
-   "url": "https://elx.mit.edu/experience/0fc11241-d013-4892-b638-b5b04997f5ea",
-   "title": "Open-Weight Migration & Scaling of an AI-Driven Scientific Discovery Platform",
-   "dept": "Chemistry",
-   "pi": "Moungi Bawendi",
-   "pay": "$20/h+credit",
-   "hrs": "6-10",
-   "remote": false,
-   "terms": "Fall",
-   "deadline": "",
-   "closed": false,
-   "prestige": 3,
-   "fit": 5,
-   "score": 50,
-   "note": "Nobel-laureate PI. Move LLM science agents to open-weight models on MIT's H200 cluster",
-   "new": false,
-   "rank": 1
-  },
   {
    "id": "2ff6602d-49b4-4c78-8852-65902929cd9a",
    "url": "https://elx.mit.edu/experience/2ff6602d-49b4-4c78-8852-65902929cd9a",
@@ -37,7 +18,7 @@
    "score": 46,
    "note": "Same group as 'AI for global security' \u2014 US Gov / industry partners; CV, RL, anomaly detection",
    "new": false,
-   "rank": 2
+   "rank": 1
   },
   {
    "id": "58f9b0c3-3eb1-4c39-afb3-479213a45c14",
@@ -56,7 +37,7 @@
    "score": 46,
    "note": "US Government research sponsors, STTR Phase II projects (AI, image analysis, autopilot)",
    "new": false,
-   "rank": 3
+   "rank": 2
   },
   {
    "id": "0fc79ca8-8083-412c-9af8-728f4379dbc3",
@@ -75,45 +56,26 @@
    "score": 44,
    "note": "MIT Lincoln Laboratory IGLOO project. Firmware emulation, fuzzing; REMOTE; highest base pay",
    "new": false,
-   "rank": 4
+   "rank": 3
   },
   {
-   "id": "af36e657-a5a5-4680-abd6-1acda75951f3",
-   "url": "https://elx.mit.edu/experience/af36e657-a5a5-4680-abd6-1acda75951f3",
-   "title": "Sponsor Funded UROP: Scientific Software for GPU-accelerated Energy Systems Optimization",
-   "dept": "Chemical Eng",
-   "pi": "Sungho Shin",
-   "pay": "$16.25/h",
+   "id": "07249ad6-3bd7-452e-8f4a-45e79222f0d2",
+   "url": "https://elx.mit.edu/experience/07249ad6-3bd7-452e-8f4a-45e79222f0d2",
+   "title": "Data Acquisition for Ultracold Neutron EDM Experiment at Los Alamos",
+   "dept": "LNS",
+   "pi": "Robert Redwine",
+   "pay": "Paid (TBD)",
    "hrs": "6-10",
    "remote": false,
-   "terms": "Fall",
+   "terms": "IAP/Spring/Summer/Fall",
    "deadline": "",
    "closed": false,
    "prestige": 3,
    "fit": 3,
    "score": 42,
-   "note": "MIT\u2013GE Vernova Alliance sponsored. GPU nonlinear optimization for power grids in Julia (ExaModelsPower.jl)",
-   "new": false,
-   "rank": 5
-  },
-  {
-   "id": "7078ac84-a3da-48be-9cb6-b6e406eb9aa0",
-   "url": "https://elx.mit.edu/experience/7078ac84-a3da-48be-9cb6-b6e406eb9aa0",
-   "title": "Propulsion Modeling for AI-Enabled Aircraft Design",
-   "dept": "MechE",
-   "pi": "Faez Ahmed",
-   "pay": "$16.25/h+credit",
-   "hrs": "11-15",
-   "remote": false,
-   "terms": "Fall",
-   "deadline": "",
-   "closed": false,
-   "prestige": 3,
-   "fit": 3,
-   "score": 42,
-   "note": "In collaboration with MIT Lincoln Laboratory; surrogate models for aircraft design",
-   "new": false,
-   "rank": 6
+   "note": "Build DAQ hardware for an experiment at Los Alamos National Laboratory",
+   "new": true,
+   "rank": 4
   },
   {
    "id": "3b490dc4-51ff-4cd6-bafd-ee2d92ca3941",
@@ -132,45 +94,7 @@
    "score": 40,
    "note": "Personal Robots Group; LLM persona evals on frontier models, possible fine-tuning",
    "new": false,
-   "rank": 7
-  },
-  {
-   "id": "4fef5cc7-44f1-4a30-84c8-c5781cf8a8a5",
-   "url": "https://elx.mit.edu/experience/4fef5cc7-44f1-4a30-84c8-c5781cf8a8a5",
-   "title": "Trustworthy knowledge systems built and maintained by AI agents",
-   "dept": "Media Lab",
-   "pi": "Ramesh Raskar",
-   "pay": "Paid",
-   "hrs": "11-15",
-   "remote": false,
-   "terms": "Fall",
-   "deadline": "",
-   "closed": false,
-   "prestige": 2,
-   "fit": 5,
-   "score": 40,
-   "note": "Agent memory / when-to-ask research \u2014 trustworthiness angle",
-   "new": false,
-   "rank": 8
-  },
-  {
-   "id": "9e4929eb-cd66-49ea-8762-bf2209f9ba4f",
-   "url": "https://elx.mit.edu/experience/9e4929eb-cd66-49ea-8762-bf2209f9ba4f",
-   "title": "Real-World Multimodal AI Agents for Everyday Health and Wellness",
-   "dept": "Media Lab",
-   "pi": "Paul Liang",
-   "pay": "Credit",
-   "hrs": "21-30",
-   "remote": false,
-   "terms": "Summer/Fall",
-   "deadline": "",
-   "closed": false,
-   "prestige": 2,
-   "fit": 5,
-   "score": 40,
-   "note": "Explicitly about human-aligned, interpretable AI models; 3 paper submissions planned",
-   "new": false,
-   "rank": 9
+   "rank": 5
   },
   {
    "id": "dbb1b729-11af-4efe-babe-de5323daaa11",
@@ -189,7 +113,7 @@
    "score": 40,
    "note": "Own the RL/imitation stack on a bimanual Franka; NVIDIA GEAR-style tasks",
    "new": false,
-   "rank": 10
+   "rank": 6
   },
   {
    "id": "e7ae00d5-f820-4b01-b726-7a517aed4fa1",
@@ -208,7 +132,7 @@
    "score": 40,
    "note": "MARL + game theory; cooperative-AI flavor close to alignment",
    "new": false,
-   "rank": 11
+   "rank": 7
   },
   {
    "id": "3378b3f5-d67e-43dc-bf18-44524f090068",
@@ -227,7 +151,7 @@
    "score": 40,
    "note": "Train a manipulation simulator from human video",
    "new": false,
-   "rank": 12
+   "rank": 8
   },
   {
    "id": "024d9bc2-4e22-4585-874f-579c86f8a18d",
@@ -246,7 +170,26 @@
    "score": 38,
    "note": "With Mass General Psychiatry; tune custom transformers on wearable time-series",
    "new": false,
-   "rank": 13
+   "rank": 9
+  },
+  {
+   "id": "0205d01f-e072-4bb8-b199-8e53c643c74b",
+   "url": "https://elx.mit.edu/experience/0205d01f-e072-4bb8-b199-8e53c643c74b",
+   "title": "Co-Designing AI Agent for Creative Coding Education",
+   "dept": "Media Lab",
+   "pi": "Zach Lieberman",
+   "pay": "$16.25/h+credit",
+   "hrs": "6-10",
+   "remote": true,
+   "terms": "IAP",
+   "deadline": "11/13/2026",
+   "closed": false,
+   "prestige": 2,
+   "fit": 4,
+   "score": 38,
+   "note": "Build an AI coding-tutor agent for Processing/creative coding; REMOTE; IAP only; apply by 11/13",
+   "new": true,
+   "rank": 10
   },
   {
    "id": "f68404ee-4ee9-439b-b660-71abc92d7dff",
@@ -265,7 +208,7 @@
    "score": 38,
    "note": "CERN CMS detector upgrade \u2014 mechanical hardware",
    "new": false,
-   "rank": 14
+   "rank": 11
   },
   {
    "id": "bbd4750a-85a1-45d6-b3fa-2a22ce6d5961",
@@ -284,7 +227,7 @@
    "score": 38,
    "note": "Collaboration with NASA JPL; decision models on EMIT/SWOT satellite data",
    "new": false,
-   "rank": 15
+   "rank": 12
   },
   {
    "id": "523c8eee-e98a-49ee-b6ab-cc73907fbacd",
@@ -303,7 +246,7 @@
    "score": 38,
    "note": "Code runs on NASA Astrobee robots aboard the ISS",
    "new": false,
-   "rank": 16
+   "rank": 13
   },
   {
    "id": "9954c3a5-e500-4f1f-84c4-37a30cbd27be",
@@ -322,7 +265,7 @@
    "score": 38,
    "note": "Hardware flying on planes, rockets and the ISS",
    "new": false,
-   "rank": 17
+   "rank": 14
   },
   {
    "id": "1c6a4b00-0389-4e11-98d0-d49f1cdc9f49",
@@ -341,7 +284,7 @@
    "score": 38,
    "note": "Electron-Ion Collider at Brookhaven National Lab \u2014 electronics hardware",
    "new": false,
-   "rank": 18
+   "rank": 15
   },
   {
    "id": "bd02cf6b-7fdd-4de6-aedb-2e9a865937e8",
@@ -360,7 +303,7 @@
    "score": 36,
    "note": "LLM agents + computer-use for end-user programming; co-author papers",
    "new": false,
-   "rank": 19
+   "rank": 16
   },
   {
    "id": "66856392-4544-4af6-9204-70d5df12b98a",
@@ -379,45 +322,7 @@
    "score": 36,
    "note": "Protein LMs + geometric DL",
    "new": false,
-   "rank": 20
-  },
-  {
-   "id": "8dd14ae6-1a47-40d8-987a-e9e4febddabf",
-   "url": "https://elx.mit.edu/experience/8dd14ae6-1a47-40d8-987a-e9e4febddabf",
-   "title": "AI Analysis of Prehistoric Art and Human Behavior",
-   "dept": "DUSP",
-   "pi": "Carlo Ratti",
-   "pay": "$16.25/h+credit",
-   "hrs": "var",
-   "remote": false,
-   "terms": "Fall",
-   "deadline": "",
-   "closed": false,
-   "prestige": 2,
-   "fit": 4,
-   "score": 36,
-   "note": "Senseable City Lab; CV + multimodal LLMs",
-   "new": false,
-   "rank": 21
-  },
-  {
-   "id": "d29646f2-a574-41eb-a779-cb400d40f711",
-   "url": "https://elx.mit.edu/experience/d29646f2-a574-41eb-a779-cb400d40f711",
-   "title": "Robotics Manipulation with novel gripper",
-   "dept": "BCS",
-   "pi": "Edward Adelson",
-   "pay": "$16.25/h+credit",
-   "hrs": "11-15",
-   "remote": false,
-   "terms": "Fall",
-   "deadline": "",
-   "closed": false,
-   "prestige": 2,
-   "fit": 4,
-   "score": 36,
-   "note": "Imitation learning on bimanual robot; GelSight lab",
-   "new": false,
-   "rank": 22
+   "rank": 17
   },
   {
    "id": "6c429f50-9d2d-4ef1-9f71-acbab0830dbf",
@@ -436,7 +341,7 @@
    "score": 36,
    "note": "MGH Wellman Center; ML on OCT imaging",
    "new": false,
-   "rank": 23
+   "rank": 18
   },
   {
    "id": "40e83d52-dd14-4d66-82dd-dcf8506e7194",
@@ -455,45 +360,7 @@
    "score": 36,
    "note": "ColabFold PI; beyond-AlphaFold PPI models",
    "new": false,
-   "rank": 24
-  },
-  {
-   "id": "09b2c65f-cbf6-4e53-a0cb-5b0a8955cd9e",
-   "url": "https://elx.mit.edu/experience/09b2c65f-cbf6-4e53-a0cb-5b0a8955cd9e",
-   "title": "MIT-wide Canvas LLM tutor",
-   "dept": "Open Learning",
-   "pi": "Dimitris Bertsimas",
-   "pay": "$16.25/h+credit",
-   "hrs": "11-15",
-   "remote": false,
-   "terms": "Fall",
-   "deadline": "",
-   "closed": false,
-   "prestige": 2,
-   "fit": 4,
-   "score": 36,
-   "note": "Vice Provost's project; publishable",
-   "new": false,
-   "rank": 25
-  },
-  {
-   "id": "a456b609-9845-41d7-bd5d-3f79ae62a57f",
-   "url": "https://elx.mit.edu/experience/a456b609-9845-41d7-bd5d-3f79ae62a57f",
-   "title": "AI for science: Autonomous Multi-Agent Design of Architected Polymers",
-   "dept": "CEE",
-   "pi": "Markus Buehler",
-   "pay": "$16.25/h",
-   "hrs": "31-40",
-   "remote": false,
-   "terms": "Summer/Fall",
-   "deadline": "",
-   "closed": false,
-   "prestige": 2,
-   "fit": 4,
-   "score": 36,
-   "note": "Multi-agent LLM framework (ScienceClaw)",
-   "new": false,
-   "rank": 26
+   "rank": 19
   },
   {
    "id": "c3ccece6-4776-42d9-9391-208cc7d52a35",
@@ -512,7 +379,7 @@
    "score": 36,
    "note": "",
    "new": false,
-   "rank": 27
+   "rank": 20
   },
   {
    "id": "21e8ffd1-e16c-4d80-af47-5c98ebb61845",
@@ -531,7 +398,7 @@
    "score": 36,
    "note": "",
    "new": false,
-   "rank": 28
+   "rank": 21
   },
   {
    "id": "59ecf504-0c1c-4637-b65e-3e3828dabf05",
@@ -550,7 +417,7 @@
    "score": 36,
    "note": "",
    "new": false,
-   "rank": 29
+   "rank": 22
   },
   {
    "id": "c67c0e7e-34ef-4de9-a95f-05e92e5c88d3",
@@ -569,26 +436,26 @@
    "score": 36,
    "note": "HPC / systems / architecture for AI \u2014 hardware-adjacent",
    "new": false,
-   "rank": 30
+   "rank": 23
   },
   {
-   "id": "e6956ce4-b9f0-4480-91ca-671683cba0a3",
-   "url": "https://elx.mit.edu/experience/e6956ce4-b9f0-4480-91ca-671683cba0a3",
-   "title": "Biomedical Data Analysis for Drug Addiction",
-   "dept": "Edgerton",
-   "pi": "Richard Fletcher",
-   "pay": "Credit",
-   "hrs": "6-10",
-   "remote": true,
+   "id": "70066049-1552-4740-98a8-0701086e7ea2",
+   "url": "https://elx.mit.edu/experience/70066049-1552-4740-98a8-0701086e7ea2",
+   "title": "AI-Enabled, Interactive, Urban Data Visualization",
+   "dept": "Media Lab City Science",
+   "pi": "Kent Larson",
+   "pay": "$16.25/h",
+   "hrs": "var",
+   "remote": false,
    "terms": "Fall",
    "deadline": "",
    "closed": false,
    "prestige": 2,
-   "fit": 3,
-   "score": 34,
-   "note": "With Harvard Med / MGH Psychiatry; ML on wearable data",
-   "new": false,
-   "rank": 31
+   "fit": 4,
+   "score": 36,
+   "note": "Conversational AI agents that pick and render visualizations in AR",
+   "new": true,
+   "rank": 24
   },
   {
    "id": "e7b22062-c741-47d3-b4d9-8cc04017d795",
@@ -607,7 +474,7 @@
    "score": 32,
    "note": "Physical hardware interfaces for AI",
    "new": false,
-   "rank": 32
+   "rank": 25
   },
   {
    "id": "8471db4c-a081-4827-978c-8545327d8fb4",
@@ -626,7 +493,7 @@
    "score": 32,
    "note": "With Hasso Plattner Institute; AI scenario planning for data centers",
    "new": false,
-   "rank": 33
+   "rank": 26
   },
   {
    "id": "0959476f-af5f-4f13-b788-553e3b1721a4",
@@ -645,7 +512,7 @@
    "score": 32,
    "note": "Sponsored research; AI economics",
    "new": false,
-   "rank": 34
+   "rank": 27
   },
   {
    "id": "c971399d-65c6-4dd8-b911-b343dbb115f4",
@@ -664,7 +531,7 @@
    "score": 32,
    "note": "Electronics + software interfaces",
    "new": false,
-   "rank": 35
+   "rank": 28
   },
   {
    "id": "c133545b-d403-4378-a210-876a6308b62c",
@@ -683,7 +550,7 @@
    "score": 32,
    "note": "",
    "new": false,
-   "rank": 36
+   "rank": 29
   },
   {
    "id": "fdb567fd-1e39-4581-9b43-faa19e2ad0a4",
@@ -702,7 +569,7 @@
    "score": 32,
    "note": "",
    "new": false,
-   "rank": 37
+   "rank": 30
   },
   {
    "id": "37145345-9ed1-4ac3-8af1-c2d1937168a3",
@@ -721,7 +588,7 @@
    "score": 32,
    "note": "",
    "new": false,
-   "rank": 38
+   "rank": 31
   },
   {
    "id": "35fdd6b8-9b1e-4adf-8695-141eba921389",
@@ -740,7 +607,7 @@
    "score": 32,
    "note": "",
    "new": false,
-   "rank": 39
+   "rank": 32
   },
   {
    "id": "2592825c-d44b-49ef-bc7c-0ee7de79f3a4",
@@ -759,45 +626,64 @@
    "score": 32,
    "note": "",
    "new": false,
-   "rank": 40
+   "rank": 33
   },
   {
-   "id": "71a73337-8240-494d-a5a9-42c2d1bc15a3",
-   "url": "https://elx.mit.edu/experience/71a73337-8240-494d-a5a9-42c2d1bc15a3",
-   "title": "AI Agent Orchestrators for a Self-Driving Materials Discovery Lab",
-   "dept": "EECS",
-   "pi": "Brian Anthony",
+   "id": "24576009-ce77-4643-b765-2128c71525dd",
+   "url": "https://elx.mit.edu/experience/24576009-ce77-4643-b765-2128c71525dd",
+   "title": "Acoustic Scene Reconstruction",
+   "dept": "Media Lab",
+   "pi": "Fadel Adib",
    "pay": "$16.25/h",
+   "hrs": "31-40",
+   "remote": false,
+   "terms": "IAP/Spring",
+   "deadline": "",
+   "closed": false,
+   "prestige": 2,
+   "fit": 3,
+   "score": 32,
+   "note": "Signal Kinetics lab; acoustic sensing hardware + systems",
+   "new": true,
+   "rank": 34
+  },
+  {
+   "id": "5fdf481e-2c4f-4e42-b977-3cb817501ca2",
+   "url": "https://elx.mit.edu/experience/5fdf481e-2c4f-4e42-b977-3cb817501ca2",
+   "title": "Remote Communication (wireless sensor + LED system)",
+   "dept": "Media Lab",
+   "pi": "Hiroshi Ishii",
+   "pay": "Paid (TBD)",
+   "hrs": "0-5",
+   "remote": false,
+   "terms": "IAP/Spring",
+   "deadline": "",
+   "closed": false,
+   "prestige": 2,
+   "fit": 3,
+   "score": 32,
+   "note": "Tangible Media; ESP32/wireless hardware",
+   "new": true,
+   "rank": 35
+  },
+  {
+   "id": "b4c96078-9219-44ba-b11e-688cf78d831e",
+   "url": "https://elx.mit.edu/experience/b4c96078-9219-44ba-b11e-688cf78d831e",
+   "title": "Electronics & Embedded Systems (touch sensing)",
+   "dept": "Media Lab",
+   "pi": "Hiroshi Ishii",
+   "pay": "Paid (TBD)",
    "hrs": "11-15",
    "remote": false,
-   "terms": "Fall",
+   "terms": "IAP/Spring",
    "deadline": "",
    "closed": false,
-   "prestige": 1,
-   "fit": 5,
-   "score": 30,
-   "note": "LLM agents steering Bayesian optimization in an autonomous lab",
-   "new": false,
-   "rank": 41
-  },
-  {
-   "id": "0170717e-edfb-42ca-a21a-cf674101f422",
-   "url": "https://elx.mit.edu/experience/0170717e-edfb-42ca-a21a-cf674101f422",
-   "title": "Automated testing for models of socio-technical systems",
-   "dept": "Sloan",
-   "pi": "Hazhir Rahmandad",
-   "pay": "~$17/h",
-   "hrs": "16-20",
-   "remote": true,
-   "terms": "Fall",
-   "deadline": "",
-   "closed": false,
-   "prestige": 1,
-   "fit": 4,
-   "score": 28,
-   "note": "LLM-generated test suites + CI pipeline",
-   "new": false,
-   "rank": 42
+   "prestige": 2,
+   "fit": 3,
+   "score": 32,
+   "note": "Tangible Media; PCB design + microcontrollers",
+   "new": true,
+   "rank": 36
   },
   {
    "id": "d90bf6b1-afd2-4894-8432-80f5b6c767ab",
@@ -816,7 +702,7 @@
    "score": 28,
    "note": "Distill deep nets into interpretable models; interpretability angle",
    "new": false,
-   "rank": 43
+   "rank": 37
   },
   {
    "id": "9f19e94c-6d17-4911-be41-3efde1489e1f",
@@ -835,7 +721,7 @@
    "score": 28,
    "note": "Own an ML pipeline + LLM serving; REMOTE; $50/h",
    "new": false,
-   "rank": 44
+   "rank": 38
   },
   {
    "id": "f5dd0356-82f0-4a90-a313-b5f00911501b",
@@ -854,7 +740,7 @@
    "score": 28,
    "note": "AI-agent literature extraction; REMOTE",
    "new": false,
-   "rank": 45
+   "rank": 39
   },
   {
    "id": "76ccfc44-bc45-476d-8006-0b3bd6f56e0c",
@@ -873,7 +759,7 @@
    "score": 28,
    "note": "Sequential decision-making / RL-flavored on EHRs; REMOTE",
    "new": false,
-   "rank": 46
+   "rank": 40
   },
   {
    "id": "025e66c4-f331-494d-b05e-81e82b7f154f",
@@ -892,7 +778,7 @@
    "score": 28,
    "note": "Monte Carlo sim of nuclear conflict; PI is a former senior DoD official",
    "new": false,
-   "rank": 47
+   "rank": 41
   },
   {
    "id": "a587b946-a7ae-4896-ad5b-86e084068fd2",
@@ -911,7 +797,7 @@
    "score": 28,
    "note": "Herr Biomechatronics; soft-robotic actuator hardware",
    "new": false,
-   "rank": 48
+   "rank": 42
   },
   {
    "id": "328fcf4d-7cf9-46f7-a8d6-75573eeff394",
@@ -930,7 +816,7 @@
    "score": 28,
    "note": "",
    "new": false,
-   "rank": 49
+   "rank": 43
   },
   {
    "id": "7e9cc79d-e2f6-44b8-b3a0-b7726e50648d",
@@ -949,7 +835,7 @@
    "score": 28,
    "note": "PI is former NASA Deputy Administrator; VR over satellite data",
    "new": false,
-   "rank": 50
+   "rank": 44
   },
   {
    "id": "a471e5bc-fc08-4ab4-b666-d12af1e54ead",
@@ -968,26 +854,7 @@
    "score": 28,
    "note": "MGH Wellman Center; mechanical/system hardware",
    "new": false,
-   "rank": 51
-  },
-  {
-   "id": "39d5aaf0-beaa-45e5-8327-6026f03a1bbc",
-   "url": "https://elx.mit.edu/experience/39d5aaf0-beaa-45e5-8327-6026f03a1bbc",
-   "title": "Plasma disruption forces for tokamak fusion reactors",
-   "dept": "PSFC",
-   "pi": "Cristina Rea",
-   "pay": "Paid (TBD)",
-   "hrs": "6-10",
-   "remote": false,
-   "terms": "Fall",
-   "deadline": "",
-   "closed": false,
-   "prestige": 2,
-   "fit": 2,
-   "score": 28,
-   "note": "Fusion energy analysis",
-   "new": false,
-   "rank": 52
+   "rank": 45
   },
   {
    "id": "5691bbf7-fd9e-43ab-87ae-9d4ea001ac8f",
@@ -1006,7 +873,7 @@
    "score": 28,
    "note": "Sensor hardware",
    "new": false,
-   "rank": 53
+   "rank": 46
   },
   {
    "id": "8ee0c1ab-51b0-46dc-83db-6f28b6c9dbf7",
@@ -1025,7 +892,7 @@
    "score": 28,
    "note": "PI is former NASA Deputy Administrator; Unity/XR",
    "new": false,
-   "rank": 54
+   "rank": 47
   },
   {
    "id": "71df5b9b-e68a-4e6a-9092-22bf46d5e83b",
@@ -1044,7 +911,7 @@
    "score": 28,
    "note": "",
    "new": false,
-   "rank": 55
+   "rank": 48
   },
   {
    "id": "442ff8ac-5756-435b-9b9a-b6c7aeec7868",
@@ -1063,7 +930,7 @@
    "score": 28,
    "note": "Robotic lunar mission concept; magnetometry hardware",
    "new": false,
-   "rank": 56
+   "rank": 49
   },
   {
    "id": "52a75059-232a-4b2d-bdce-28f1ce93fc2c",
@@ -1082,26 +949,7 @@
    "score": 28,
    "note": "",
    "new": false,
-   "rank": 57
-  },
-  {
-   "id": "19ff141e-83a5-41c6-a5a7-0045dbdf1449",
-   "url": "https://elx.mit.edu/experience/19ff141e-83a5-41c6-a5a7-0045dbdf1449",
-   "title": "Algorithmic Survey and Measuring Theoretical Progress",
-   "dept": "CSAIL FutureTech",
-   "pi": "Neil Thompson",
-   "pay": "$23/h",
-   "hrs": "31-40",
-   "remote": false,
-   "terms": "Summer/Fall",
-   "deadline": "",
-   "closed": false,
-   "prestige": 2,
-   "fit": 2,
-   "score": 28,
-   "note": "",
-   "new": false,
-   "rank": 58
+   "rank": 50
   },
   {
    "id": "1b6ccafc-4057-4bba-92a9-b10855b933c3",
@@ -1120,7 +968,7 @@
    "score": 28,
    "note": "",
    "new": false,
-   "rank": 59
+   "rank": 51
   },
   {
    "id": "b4593c35-33a8-4c1b-85d0-bdfc36c6d1e5",
@@ -1139,7 +987,7 @@
    "score": 28,
    "note": "",
    "new": false,
-   "rank": 60
+   "rank": 52
   },
   {
    "id": "57c29e58-b6c3-4d0c-9cc2-f5ccce007ccf",
@@ -1158,7 +1006,45 @@
    "score": 28,
    "note": "Not offered in Fall",
    "new": false,
-   "rank": 61
+   "rank": 53
+  },
+  {
+   "id": "7f185d33-37b0-4a22-a539-db648440be83",
+   "url": "https://elx.mit.edu/experience/7f185d33-37b0-4a22-a539-db648440be83",
+   "title": "Design and Characterization of Flexible Electrochemical Sensors",
+   "dept": "Koch Institute",
+   "pi": "Robert Langer",
+   "pay": "Paid (TBD)",
+   "hrs": "11-15",
+   "remote": false,
+   "terms": "IAP/Spring/Summer/Fall",
+   "deadline": "",
+   "closed": false,
+   "prestige": 2,
+   "fit": 2,
+   "score": 28,
+   "note": "Langer Lab; GI bioelectronic sensor fabrication",
+   "new": true,
+   "rank": 54
+  },
+  {
+   "id": "a002b6ce-0be2-413e-8003-5ddcf8ab9c26",
+   "url": "https://elx.mit.edu/experience/a002b6ce-0be2-413e-8003-5ddcf8ab9c26",
+   "title": "Drug delivery to the brain",
+   "dept": "Biological Eng / MGH",
+   "pi": "Alice Stanton",
+   "pay": "Volunteer",
+   "hrs": "11-15",
+   "remote": false,
+   "terms": "IAP/Spring/Summer/Fall",
+   "deadline": "11/20/2026",
+   "closed": false,
+   "prestige": 2,
+   "fit": 2,
+   "score": 28,
+   "note": "MGH lab; has an AI/ML side as well as wet lab",
+   "new": true,
+   "rank": 55
   },
   {
    "id": "f2cfd059-6c0d-477b-a7b5-be54fe6eaae7",
@@ -1177,7 +1063,7 @@
    "score": 26,
    "note": "Build/evaluate AI agents",
    "new": false,
-   "rank": 62
+   "rank": 56
   },
   {
    "id": "1f6a5fd6-d3cb-4eff-8cf7-acd46f619077",
@@ -1196,7 +1082,7 @@
    "score": 26,
    "note": "Deep learning + NLP + AI assurance",
    "new": false,
-   "rank": 63
+   "rank": 57
   },
   {
    "id": "2d46f5d7-99f4-41cc-ba01-e413bc5cce9d",
@@ -1215,7 +1101,7 @@
    "score": 26,
    "note": "",
    "new": false,
-   "rank": 64
+   "rank": 58
   },
   {
    "id": "f057a647-82c8-48eb-84ac-043719d023f8",
@@ -1234,35 +1120,16 @@
    "score": 24,
    "note": "AI ethics/policy research",
    "new": false,
-   "rank": 65
+   "rank": 59
   },
   {
-   "id": "8b388bb2-d382-4971-9d7c-9a896fd29999",
-   "url": "https://elx.mit.edu/experience/8b388bb2-d382-4971-9d7c-9a896fd29999",
-   "title": "Machine Learning on Android Phones",
-   "dept": "Edgerton",
-   "pi": "Richard Fletcher",
-   "pay": "$16/h+credit",
-   "hrs": "6-10",
-   "remote": true,
-   "terms": "IAP/Spring/Summer/Fall",
-   "deadline": "",
-   "closed": false,
-   "prestige": 1,
-   "fit": 3,
-   "score": 24,
-   "note": "On-device TFLite",
-   "new": false,
-   "rank": 66
-  },
-  {
-   "id": "84057d15-0eb4-4ab9-9a43-6385edb82721",
-   "url": "https://elx.mit.edu/experience/84057d15-0eb4-4ab9-9a43-6385edb82721",
-   "title": "Building a Culture of AI Security in Organizations",
+   "id": "9de2409b-97eb-41b6-b4a5-00c0e9e70295",
+   "url": "https://elx.mit.edu/experience/9de2409b-97eb-41b6-b4a5-00c0e9e70295",
+   "title": "AI Shopping Agents and Consumer Preferences",
    "dept": "Sloan",
-   "pi": "Keri Pearlson",
-   "pay": "Paid",
-   "hrs": "6-10",
+   "pi": "John Hauser",
+   "pay": "$16.25/h+credit",
+   "hrs": "0-5",
    "remote": true,
    "terms": "Fall",
    "deadline": "",
@@ -1270,9 +1137,9 @@
    "prestige": 1,
    "fit": 3,
    "score": 24,
-   "note": "AI risk / security culture research",
-   "new": false,
-   "rank": 67
+   "note": "Compare human vs LLM-extracted preferences from agent chats; REMOTE",
+   "new": true,
+   "rank": 60
   },
   {
    "id": "150fc3be-0029-4fe2-bee0-f93bb3c064dd",
@@ -1291,7 +1158,7 @@
    "score": 24,
    "note": "",
    "new": false,
-   "rank": 68
+   "rank": 61
   },
   {
    "id": "6d1b3dd7-b5c3-467a-a217-b7d2ddcedc78",
@@ -1310,7 +1177,7 @@
    "score": 22,
    "note": "Autonomy + hardware",
    "new": false,
-   "rank": 69
+   "rank": 62
   },
   {
    "id": "b9e83302-0dc4-49cb-ad1b-27663c2539a3",
@@ -1329,7 +1196,7 @@
    "score": 22,
    "note": "ARM firmware, hardware",
    "new": false,
-   "rank": 70
+   "rank": 63
   },
   {
    "id": "a10aff4a-7754-4536-ab1b-18bfbf779c5f",
@@ -1348,26 +1215,7 @@
    "score": 22,
    "note": "",
    "new": false,
-   "rank": 71
-  },
-  {
-   "id": "b131888a-5434-43fc-9137-ba3337f2e357",
-   "url": "https://elx.mit.edu/experience/b131888a-5434-43fc-9137-ba3337f2e357",
-   "title": "Research Computing Support (Fall 2026)",
-   "dept": "ORCD",
-   "pi": "Lauren Milechin",
-   "pay": "$20+/h",
-   "hrs": "6-10",
-   "remote": false,
-   "terms": "Fall",
-   "deadline": "",
-   "closed": false,
-   "prestige": 1,
-   "fit": 3,
-   "score": 22,
-   "note": "Support researchers on MIT's largest AI/HPC systems",
-   "new": false,
-   "rank": 72
+   "rank": 64
   },
   {
    "id": "1892bf36-5dae-40e1-ab5e-0161bf004c1d",
@@ -1386,7 +1234,7 @@
    "score": 22,
    "note": "Firmware/controls hardware",
    "new": false,
-   "rank": 73
+   "rank": 65
   },
   {
    "id": "7075c67e-08e6-46f5-901e-d1f903cad748",
@@ -1405,7 +1253,7 @@
    "score": 22,
    "note": "",
    "new": false,
-   "rank": 74
+   "rank": 66
   },
   {
    "id": "4d8ef4aa-7d86-4da6-adbf-1b73f19cd0c4",
@@ -1424,45 +1272,7 @@
    "score": 22,
    "note": "",
    "new": false,
-   "rank": 75
-  },
-  {
-   "id": "836bf7a9-66d6-4f43-aab7-1c799766de83",
-   "url": "https://elx.mit.edu/experience/836bf7a9-66d6-4f43-aab7-1c799766de83",
-   "title": "Benchmarking CV Methods for Lithium Deposition Analysis",
-   "dept": "MechE",
-   "pi": "Betar Gallant",
-   "pay": "Paid",
-   "hrs": "6-10",
-   "remote": false,
-   "terms": "IAP/Spring/Fall",
-   "deadline": "",
-   "closed": false,
-   "prestige": 1,
-   "fit": 3,
-   "score": 22,
-   "note": "",
-   "new": false,
-   "rank": 76
-  },
-  {
-   "id": "fc843f32-2bba-4e78-a3f1-a9cce5ec9530",
-   "url": "https://elx.mit.edu/experience/fc843f32-2bba-4e78-a3f1-a9cce5ec9530",
-   "title": "Designing a Self-Driving Laboratory for Living Systems",
-   "dept": "MechE",
-   "pi": "Giovanni Traverso",
-   "pay": "Credit",
-   "hrs": "6-10",
-   "remote": false,
-   "terms": "Fall",
-   "deadline": "",
-   "closed": false,
-   "prestige": 1,
-   "fit": 3,
-   "score": 22,
-   "note": "",
-   "new": false,
-   "rank": 77
+   "rank": 67
   },
   {
    "id": "f9f271f0-df05-4972-b2c0-210870a1564a",
@@ -1481,7 +1291,7 @@
    "score": 22,
    "note": "",
    "new": false,
-   "rank": 78
+   "rank": 68
   },
   {
    "id": "60bd0746-7956-4253-8b6e-71e91b7e3de9",
@@ -1500,7 +1310,7 @@
    "score": 22,
    "note": "",
    "new": false,
-   "rank": 79
+   "rank": 69
   },
   {
    "id": "cfabe415-b0f6-4fa4-bd27-77d861f9056d",
@@ -1519,7 +1329,7 @@
    "score": 22,
    "note": "",
    "new": false,
-   "rank": 80
+   "rank": 70
   },
   {
    "id": "b6154cff-5ae0-4e83-86be-ebd5ecb056bc",
@@ -1538,7 +1348,7 @@
    "score": 22,
    "note": "",
    "new": false,
-   "rank": 81
+   "rank": 71
   },
   {
    "id": "e773c545-183f-4d4a-8c2b-06c56efb9e0f",
@@ -1557,26 +1367,64 @@
    "score": 22,
    "note": "",
    "new": false,
-   "rank": 82
+   "rank": 72
   },
   {
-   "id": "9af3423a-a0ec-4cc3-9b78-e3f35ccea9d9",
-   "url": "https://elx.mit.edu/experience/9af3423a-a0ec-4cc3-9b78-e3f35ccea9d9",
-   "title": "Mobile Apps and VR for Mental Health Assessment",
-   "dept": "Edgerton",
-   "pi": "Richard Fletcher",
-   "pay": "$16.25/h+credit",
+   "id": "456961f4-0f5b-4df9-b3c1-4bbc21a5476a",
+   "url": "https://elx.mit.edu/experience/456961f4-0f5b-4df9-b3c1-4bbc21a5476a",
+   "title": "Secure and resilient interconnection of the power grid to data centers",
+   "dept": "MechE",
+   "pi": "Anuradha Annaswamy",
+   "pay": "$16.25/h",
    "hrs": "6-10",
-   "remote": true,
+   "remote": false,
+   "terms": "IAP/Spring/Fall",
+   "deadline": "",
+   "closed": false,
+   "prestige": 1,
+   "fit": 3,
+   "score": 22,
+   "note": "Grid resilience for AI data-center loads",
+   "new": true,
+   "rank": 73
+  },
+  {
+   "id": "c23950ca-40a9-46c9-bba1-ecd611529da2",
+   "url": "https://elx.mit.edu/experience/c23950ca-40a9-46c9-bba1-ecd611529da2",
+   "title": "AI-Guided Design and Production of DNA Mismatch Repair Proteins",
+   "dept": "MechE",
+   "pi": "Kripa Varanasi",
+   "pay": "Credit",
+   "hrs": "11-15",
+   "remote": false,
    "terms": "IAP/Spring/Summer/Fall",
    "deadline": "",
    "closed": false,
    "prestige": 1,
-   "fit": 2,
-   "score": 20,
+   "fit": 3,
+   "score": 22,
    "note": "",
-   "new": false,
-   "rank": 83
+   "new": true,
+   "rank": 74
+  },
+  {
+   "id": "25b10e9a-2f9d-423f-b008-bd0f9edf3bd4",
+   "url": "https://elx.mit.edu/experience/25b10e9a-2f9d-423f-b008-bd0f9edf3bd4",
+   "title": "AI and Jobs",
+   "dept": "Sloan",
+   "pi": "Anna Stansbury",
+   "pay": "$25/h",
+   "hrs": "11-15",
+   "remote": false,
+   "terms": "Fall",
+   "deadline": "",
+   "closed": false,
+   "prestige": 1,
+   "fit": 3,
+   "score": 22,
+   "note": "AI labor economics using agentic AI tools; $25/h",
+   "new": true,
+   "rank": 75
   },
   {
    "id": "1563a276-401b-4627-9600-48636968c9cc",
@@ -1595,26 +1443,7 @@
    "score": 20,
    "note": "",
    "new": false,
-   "rank": 84
-  },
-  {
-   "id": "ec31403f-ffc2-4b76-9661-623e78d16594",
-   "url": "https://elx.mit.edu/experience/ec31403f-ffc2-4b76-9661-623e78d16594",
-   "title": "Front-End/JavaScript Web Development for Health Monitoring",
-   "dept": "Edgerton",
-   "pi": "Richard Fletcher",
-   "pay": "$16/h+credit",
-   "hrs": "6-10",
-   "remote": true,
-   "terms": "IAP/Spring/Summer/Fall",
-   "deadline": "",
-   "closed": false,
-   "prestige": 1,
-   "fit": 2,
-   "score": 20,
-   "note": "",
-   "new": false,
-   "rank": 85
+   "rank": 76
   },
   {
    "id": "d22f1de6-8159-4138-9fe8-5cf8f147c0ff",
@@ -1633,26 +1462,7 @@
    "score": 20,
    "note": "",
    "new": false,
-   "rank": 86
-  },
-  {
-   "id": "2d41c11c-8f36-42d2-a2a2-95c362763f08",
-   "url": "https://elx.mit.edu/experience/2d41c11c-8f36-42d2-a2a2-95c362763f08",
-   "title": "Ocean Plankton Visualizations \u2014 New England",
-   "dept": "MechE / Sea Grant",
-   "pi": "Andrew Bennett",
-   "pay": "$16.25/h+credit",
-   "hrs": "6-10",
-   "remote": true,
-   "terms": "Fall",
-   "deadline": "",
-   "closed": false,
-   "prestige": 1,
-   "fit": 2,
-   "score": 20,
-   "note": "Python pipeline over NASA Landsat imagery",
-   "new": false,
-   "rank": 87
+   "rank": 77
   },
   {
    "id": "8f2e3a01-479c-4871-8133-efaa476c8f7b",
@@ -1671,7 +1481,7 @@
    "score": 18,
    "note": "Logic/theory with a diagonalization simulator",
    "new": false,
-   "rank": 88
+   "rank": 78
   },
   {
    "id": "11ce2d2f-346c-41bb-98c2-4c2712d45a66",
@@ -1690,7 +1500,7 @@
    "score": 18,
    "note": "",
    "new": false,
-   "rank": 89
+   "rank": 79
   },
   {
    "id": "36b84848-6ed7-47ed-8844-aac5500aa9b5",
@@ -1709,7 +1519,7 @@
    "score": 18,
    "note": "",
    "new": false,
-   "rank": 90
+   "rank": 80
   },
   {
    "id": "90e57a49-8b67-46b8-b9c8-137933d2c246",
@@ -1728,7 +1538,7 @@
    "score": 18,
    "note": "Politics of data-center buildout",
    "new": false,
-   "rank": 91
+   "rank": 81
   },
   {
    "id": "5cfb9483-a71b-4e32-8768-6b14926e5840",
@@ -1747,7 +1557,7 @@
    "score": 18,
    "note": "",
    "new": false,
-   "rank": 92
+   "rank": 82
   },
   {
    "id": "25683c1d-dc59-4fc2-903a-6cf506ed6f6f",
@@ -1766,26 +1576,7 @@
    "score": 18,
    "note": "",
    "new": false,
-   "rank": 93
-  },
-  {
-   "id": "368b6b77-1227-4f57-9a49-a23f090f7478",
-   "url": "https://elx.mit.edu/experience/368b6b77-1227-4f57-9a49-a23f090f7478",
-   "title": "Smartphone-based Robot Teleoperation",
-   "dept": "MechE",
-   "pi": "John Liu",
-   "pay": "Credit",
-   "hrs": "6-10",
-   "remote": false,
-   "terms": "Fall",
-   "deadline": "",
-   "closed": false,
-   "prestige": 1,
-   "fit": 2,
-   "score": 18,
-   "note": "",
-   "new": false,
-   "rank": 94
+   "rank": 83
   },
   {
    "id": "9e66c3a2-55c4-4b56-8ec0-4c3e8c9d2ba4",
@@ -1804,7 +1595,7 @@
    "score": 18,
    "note": "",
    "new": false,
-   "rank": 95
+   "rank": 84
   },
   {
    "id": "d36f48ed-f7ad-4c50-a69f-fddd9fed6829",
@@ -1823,7 +1614,7 @@
    "score": 18,
    "note": "For a network of utility companies",
    "new": false,
-   "rank": 96
+   "rank": 85
   },
   {
    "id": "f5fecd9b-aa59-4192-a844-4fa89fdb8c16",
@@ -1842,7 +1633,7 @@
    "score": 18,
    "note": "",
    "new": false,
-   "rank": 97
+   "rank": 86
   },
   {
    "id": "11efe3d5-cffb-4749-bcfc-560d084a17d4",
@@ -1861,7 +1652,7 @@
    "score": 18,
    "note": "",
    "new": false,
-   "rank": 98
+   "rank": 87
   },
   {
    "id": "f7dc438c-98e7-4f45-a83a-d83fbc7790b9",
@@ -1880,7 +1671,7 @@
    "score": 18,
    "note": "Sensor hardware",
    "new": false,
-   "rank": 99
+   "rank": 88
   },
   {
    "id": "0a4fe6a8-be3e-4d75-80fe-f36635995b60",
@@ -1899,7 +1690,7 @@
    "score": 18,
    "note": "",
    "new": false,
-   "rank": 100
+   "rank": 89
   },
   {
    "id": "47bd65b2-50be-48d7-8bf7-37a344deab1b",
@@ -1918,7 +1709,7 @@
    "score": 18,
    "note": "",
    "new": false,
-   "rank": 101
+   "rank": 90
   },
   {
    "id": "ad2473bc-01f5-4424-bdbf-c623890ab888",
@@ -1937,7 +1728,7 @@
    "score": 18,
    "note": "",
    "new": false,
-   "rank": 102
+   "rank": 91
   },
   {
    "id": "6620aaf5-36d1-46dc-a07f-442788ad427c",
@@ -1956,7 +1747,7 @@
    "score": 18,
    "note": "",
    "new": false,
-   "rank": 103
+   "rank": 92
   },
   {
    "id": "7abf2d07-db76-4abd-8c68-3c1c0f59ad58",
@@ -1975,7 +1766,7 @@
    "score": 18,
    "note": "",
    "new": false,
-   "rank": 104
+   "rank": 93
   },
   {
    "id": "74f939b8-b47e-4d7e-a7c6-aa6f1b5ce951",
@@ -1994,7 +1785,7 @@
    "score": 18,
    "note": "",
    "new": false,
-   "rank": 105
+   "rank": 94
   },
   {
    "id": "8ee35d6b-2feb-46b6-a666-ccad2bdf1b42",
@@ -2013,7 +1804,7 @@
    "score": 18,
    "note": "Summer only",
    "new": false,
-   "rank": 106
+   "rank": 95
   },
   {
    "id": "e4d27fbe-0825-4345-b6a5-6ea0255afa2f",
@@ -2032,7 +1823,7 @@
    "score": 18,
    "note": "",
    "new": false,
-   "rank": 107
+   "rank": 96
   },
   {
    "id": "03dc89b2-0f88-450b-9e96-c50be1a0d752",
@@ -2051,7 +1842,45 @@
    "score": 18,
    "note": "",
    "new": false,
-   "rank": 108
+   "rank": 97
+  },
+  {
+   "id": "94307465-a9e6-4f83-a152-4b4dbb9e3fa1",
+   "url": "https://elx.mit.edu/experience/94307465-a9e6-4f83-a152-4b4dbb9e3fa1",
+   "title": "Soft Robotic Systems for Controlled Drug Delivery",
+   "dept": "MechE",
+   "pi": "Giovanni Traverso",
+   "pay": "Credit",
+   "hrs": "var",
+   "remote": false,
+   "terms": "Spring/Summer",
+   "deadline": "",
+   "closed": false,
+   "prestige": 1,
+   "fit": 2,
+   "score": 18,
+   "note": "",
+   "new": true,
+   "rank": 98
+  },
+  {
+   "id": "f221d4c6-9ac8-49db-99b5-753ca6e8d474",
+   "url": "https://elx.mit.edu/experience/f221d4c6-9ac8-49db-99b5-753ca6e8d474",
+   "title": "Protein Biochemistry and AI for DNA Mutation Detection",
+   "dept": "MechE",
+   "pi": "Kripa Varanasi",
+   "pay": "Credit",
+   "hrs": "11-15",
+   "remote": false,
+   "terms": "IAP/Spring/Summer/Fall",
+   "deadline": "",
+   "closed": false,
+   "prestige": 1,
+   "fit": 2,
+   "score": 18,
+   "note": "",
+   "new": true,
+   "rank": 99
   },
   {
    "id": "e01cea2b-2125-4eb2-acec-1cc98fd5ffec",
@@ -2070,26 +1899,7 @@
    "score": 16,
    "note": "",
    "new": false,
-   "rank": 109
-  },
-  {
-   "id": "2860edd4-a101-412e-859d-46390ca61d0d",
-   "url": "https://elx.mit.edu/experience/2860edd4-a101-412e-859d-46390ca61d0d",
-   "title": "Digital Frontlines",
-   "dept": "History",
-   "pi": "Elizabeth Wood",
-   "pay": "Credit",
-   "hrs": "6-10",
-   "remote": true,
-   "terms": "IAP/Spring/Summer/Fall",
-   "deadline": "",
-   "closed": false,
-   "prestige": 1,
-   "fit": 1,
-   "score": 16,
-   "note": "",
-   "new": false,
-   "rank": 110
+   "rank": 100
   },
   {
    "id": "91f32fec-78bf-4a36-b10b-11642934dd32",
@@ -2108,7 +1918,45 @@
    "score": 16,
    "note": "",
    "new": false,
-   "rank": 111
+   "rank": 101
+  },
+  {
+   "id": "cbfb3d13-1d52-4764-a8dd-e1ba2885367f",
+   "url": "https://elx.mit.edu/experience/cbfb3d13-1d52-4764-a8dd-e1ba2885367f",
+   "title": "Building a product-level supply chain dataset",
+   "dept": "Political Science",
+   "pi": "In Song Kim",
+   "pay": "$16.25/h+credit",
+   "hrs": "16-20",
+   "remote": true,
+   "terms": "IAP",
+   "deadline": "",
+   "closed": false,
+   "prestige": 1,
+   "fit": 1,
+   "score": 16,
+   "note": "",
+   "new": true,
+   "rank": 102
+  },
+  {
+   "id": "86dba8df-0d8a-44bf-9bca-d68ed2fd4955",
+   "url": "https://elx.mit.edu/experience/86dba8df-0d8a-44bf-9bca-d68ed2fd4955",
+   "title": "Designing the Future of In-Vehicle Displays",
+   "dept": "AgeLab",
+   "pi": "Joseph Coughlin",
+   "pay": "Credit",
+   "hrs": "6-10",
+   "remote": true,
+   "terms": "Fall",
+   "deadline": "",
+   "closed": false,
+   "prestige": 1,
+   "fit": 1,
+   "score": 16,
+   "note": "",
+   "new": true,
+   "rank": 103
   },
   {
    "id": "0513d5ca-04ba-4f4b-b142-45414952d143",
@@ -2127,7 +1975,7 @@
    "score": 14,
    "note": "",
    "new": false,
-   "rank": 112
+   "rank": 104
   },
   {
    "id": "4c8474b1-ff38-499d-b493-606903286d80",
@@ -2146,7 +1994,7 @@
    "score": 14,
    "note": "",
    "new": false,
-   "rank": 113
+   "rank": 105
   },
   {
    "id": "0e80698a-0e20-4d73-b84d-c14aa6524559",
@@ -2165,26 +2013,7 @@
    "score": 14,
    "note": "",
    "new": false,
-   "rank": 114
-  },
-  {
-   "id": "5d2944fd-77ab-45cb-92c1-bd5a3ad4e366",
-   "url": "https://elx.mit.edu/experience/5d2944fd-77ab-45cb-92c1-bd5a3ad4e366",
-   "title": "PKG Social Impact Internships",
-   "dept": "PKG Center",
-   "pi": "Julie Uva",
-   "pay": "Stipend",
-   "hrs": "31-40",
-   "remote": false,
-   "terms": "IAP",
-   "deadline": "",
-   "closed": false,
-   "prestige": 1,
-   "fit": 1,
-   "score": 14,
-   "note": "IAP internships via Handshake",
-   "new": false,
-   "rank": 115
+   "rank": 106
   },
   {
    "id": "ee9a4154-2547-4384-a640-c6f3a56b67be",
@@ -2203,7 +2032,7 @@
    "score": 14,
    "note": "",
    "new": false,
-   "rank": 116
+   "rank": 107
   },
   {
    "id": "5e80e67c-8305-4c9d-a9a3-ecf402c49ef0",
@@ -2222,7 +2051,7 @@
    "score": 14,
    "note": "",
    "new": false,
-   "rank": 117
+   "rank": 108
   },
   {
    "id": "6cac43c7-2613-4b5a-9e98-81b183644e5e",
@@ -2241,7 +2070,7 @@
    "score": 14,
    "note": "",
    "new": false,
-   "rank": 118
+   "rank": 109
   },
   {
    "id": "6ea84b94-f473-4727-a9d7-5d5869c2cb8a",
@@ -2260,7 +2089,7 @@
    "score": 14,
    "note": "",
    "new": false,
-   "rank": 119
+   "rank": 110
   },
   {
    "id": "9bcf5618-0f48-41f1-9ab4-7552a09c65ab",
@@ -2279,7 +2108,7 @@
    "score": 14,
    "note": "",
    "new": false,
-   "rank": 120
+   "rank": 111
   },
   {
    "id": "c5eeacbf-2057-4067-8655-dd37a60c96a9",
@@ -2298,64 +2127,7 @@
    "score": 14,
    "note": "",
    "new": false,
-   "rank": 121
-  },
-  {
-   "id": "5cc3735d-a59d-4be5-bd43-2cf2f1725077",
-   "url": "https://elx.mit.edu/experience/5cc3735d-a59d-4be5-bd43-2cf2f1725077",
-   "title": "The MIT NEI Project",
-   "dept": "Open Learning",
-   "pi": "Christopher Capozzola",
-   "pay": "$24.90/h",
-   "hrs": "11-15",
-   "remote": false,
-   "terms": "IAP/Spring/Fall",
-   "deadline": "",
-   "closed": false,
-   "prestige": 1,
-   "fit": 1,
-   "score": 14,
-   "note": "",
-   "new": false,
-   "rank": 122
-  },
-  {
-   "id": "f03db830-5062-4f21-ba34-db249973a9cd",
-   "url": "https://elx.mit.edu/experience/f03db830-5062-4f21-ba34-db249973a9cd",
-   "title": "Semiconductor characterization for sustainable solar energy",
-   "dept": "DMSE",
-   "pi": "Brian Anthony",
-   "pay": "$16.25/h",
-   "hrs": "16-20",
-   "remote": false,
-   "terms": "Fall",
-   "deadline": "",
-   "closed": false,
-   "prestige": 1,
-   "fit": 1,
-   "score": 14,
-   "note": "",
-   "new": false,
-   "rank": 123
-  },
-  {
-   "id": "adb32b19-aaf1-4e0f-904c-73053eef2802",
-   "url": "https://elx.mit.edu/experience/adb32b19-aaf1-4e0f-904c-73053eef2802",
-   "title": "Growing Shorelines",
-   "dept": "Architecture",
-   "pi": "Skylar Tibbits",
-   "pay": "$16.25/h",
-   "hrs": "6-10",
-   "remote": false,
-   "terms": "Fall",
-   "deadline": "",
-   "closed": false,
-   "prestige": 1,
-   "fit": 1,
-   "score": 14,
-   "note": "",
-   "new": false,
-   "rank": 124
+   "rank": 112
   },
   {
    "id": "1c818036-3a07-41d5-8107-82d6ca2cbb85",
@@ -2374,7 +2146,7 @@
    "score": 14,
    "note": "",
    "new": false,
-   "rank": 125
+   "rank": 113
   },
   {
    "id": "56ffdc98-0f3f-4c33-8235-2517ee2866c6",
@@ -2393,7 +2165,7 @@
    "score": 14,
    "note": "",
    "new": false,
-   "rank": 126
+   "rank": 114
   },
   {
    "id": "01213689-8f06-453d-9140-80180da47aac",
@@ -2412,7 +2184,7 @@
    "score": 14,
    "note": "",
    "new": false,
-   "rank": 127
+   "rank": 115
   },
   {
    "id": "57d4d1e3-a6ff-4275-ba62-7dee8c13cae3",
@@ -2431,7 +2203,7 @@
    "score": 14,
    "note": "",
    "new": false,
-   "rank": 128
+   "rank": 116
   },
   {
    "id": "ede73569-76d7-4e00-aace-1a43e60525b2",
@@ -2450,7 +2222,7 @@
    "score": 14,
    "note": "",
    "new": false,
-   "rank": 129
+   "rank": 117
   },
   {
    "id": "cf86a8ce-f4c2-4868-a612-8826651441a0",
@@ -2469,7 +2241,7 @@
    "score": 14,
    "note": "",
    "new": false,
-   "rank": 130
+   "rank": 118
   },
   {
    "id": "296d2605-bcc4-4045-9cf7-3ebaf3f764f0",
@@ -2488,7 +2260,7 @@
    "score": 14,
    "note": "",
    "new": false,
-   "rank": 131
+   "rank": 119
   },
   {
    "id": "d425cf61-d7b6-4e6d-94fe-c977ae07d9cc",
@@ -2507,7 +2279,7 @@
    "score": 14,
    "note": "",
    "new": false,
-   "rank": 132
+   "rank": 120
   },
   {
    "id": "13f1c49b-7155-42b3-ab44-84541dc05ae1",
@@ -2526,7 +2298,45 @@
    "score": 14,
    "note": "",
    "new": false,
-   "rank": 133
+   "rank": 121
+  },
+  {
+   "id": "12a42de2-5669-4591-b4ee-0c2df590d77f",
+   "url": "https://elx.mit.edu/experience/12a42de2-5669-4591-b4ee-0c2df590d77f",
+   "title": "Monitoring Greenhouse Gases in Massachusetts",
+   "dept": "EAPS",
+   "pi": "Noelle Selin",
+   "pay": "$20/h+credit",
+   "hrs": "6-10",
+   "remote": false,
+   "terms": "IAP/Spring/Summer",
+   "deadline": "",
+   "closed": false,
+   "prestige": 1,
+   "fit": 1,
+   "score": 14,
+   "note": "",
+   "new": true,
+   "rank": 122
+  },
+  {
+   "id": "1b25c9ea-3946-4293-9aac-5db01f51329e",
+   "url": "https://elx.mit.edu/experience/1b25c9ea-3946-4293-9aac-5db01f51329e",
+   "title": "Designing an MIT Museum Exhibit to map US energy flow",
+   "dept": "RLE",
+   "pi": "Sam Coday",
+   "pay": "$16.50/h",
+   "hrs": "16-20",
+   "remote": false,
+   "terms": "IAP/Spring/Summer/Fall",
+   "deadline": "",
+   "closed": false,
+   "prestige": 1,
+   "fit": 1,
+   "score": 14,
+   "note": "",
+   "new": true,
+   "rank": 123
   },
   {
    "id": "bda2ad66-fb19-4280-ab8c-22ba5d464f18",
@@ -2545,45 +2355,26 @@
    "score": 12,
    "note": "",
    "new": false,
-   "rank": 134
+   "rank": 124
   },
   {
-   "id": "8d423b3c-b9a5-490e-98dc-222d093f4a90",
-   "url": "https://elx.mit.edu/experience/8d423b3c-b9a5-490e-98dc-222d093f4a90",
-   "title": "TEJI Mapping Project",
-   "dept": "ESG",
-   "pi": "Carole Cafferty",
-   "pay": "$18/h",
+   "id": "23529a59-b662-4751-933d-d81411835e9b",
+   "url": "https://elx.mit.edu/experience/23529a59-b662-4751-933d-d81411835e9b",
+   "title": "Thumbs Up or Five Stars: Online Reviews of Games",
+   "dept": "Sloan",
+   "pi": "Susan Silbey",
+   "pay": "Stipend $16.25",
    "hrs": "6-10",
    "remote": true,
-   "terms": "Spring/Fall",
-   "deadline": "",
+   "terms": "IAP/Spring",
+   "deadline": "11/20/2026",
    "closed": false,
    "prestige": 1,
    "fit": 0,
    "score": 12,
    "note": "",
-   "new": false,
-   "rank": 135
-  },
-  {
-   "id": "67564ba1-7ade-4a85-bb7e-6cff9665933a",
-   "url": "https://elx.mit.edu/experience/67564ba1-7ade-4a85-bb7e-6cff9665933a",
-   "title": "The Psychology of Effort and Ability at Work",
-   "dept": "Sloan",
-   "pi": "Jared Curhan",
-   "pay": "$16.25/h+credit",
-   "hrs": "11-15",
-   "remote": true,
-   "terms": "Spring/Fall",
-   "deadline": "",
-   "closed": false,
-   "prestige": 1,
-   "fit": 0,
-   "score": 12,
-   "note": "",
-   "new": false,
-   "rank": 136
+   "new": true,
+   "rank": 125
   },
   {
    "id": "68eb99a5-3d09-4978-918f-2c2023db770b",
@@ -2602,7 +2393,7 @@
    "score": 10,
    "note": "",
    "new": false,
-   "rank": 137
+   "rank": 126
   },
   {
    "id": "c581a170-d2ac-4d7b-a637-0aa59cba8f78",
@@ -2621,7 +2412,7 @@
    "score": 10,
    "note": "",
    "new": false,
-   "rank": 138
+   "rank": 127
   },
   {
    "id": "c7685ca4-4a94-4004-b3c6-c722556e9b4c",
@@ -2640,7 +2431,7 @@
    "score": 10,
    "note": "",
    "new": false,
-   "rank": 139
+   "rank": 128
   },
   {
    "id": "b738b67a-b755-4fde-adac-92103f178c72",
@@ -2659,7 +2450,7 @@
    "score": 10,
    "note": "",
    "new": false,
-   "rank": 140
+   "rank": 129
   },
   {
    "id": "350c431e-a3e7-4447-a869-777400e11303",
@@ -2678,7 +2469,7 @@
    "score": 10,
    "note": "",
    "new": false,
-   "rank": 141
+   "rank": 130
   },
   {
    "id": "265100c9-fc3d-4210-a24f-76c50887b6af",
@@ -2697,7 +2488,7 @@
    "score": 10,
    "note": "",
    "new": false,
-   "rank": 142
+   "rank": 131
   },
   {
    "id": "7e90092c-d395-47ea-8b12-168f5e7af074",
@@ -2716,45 +2507,7 @@
    "score": 10,
    "note": "",
    "new": false,
-   "rank": 143
-  },
-  {
-   "id": "b8853353-cbb4-4bc8-bd3e-071fd3c9ba02",
-   "url": "https://elx.mit.edu/experience/b8853353-cbb4-4bc8-bd3e-071fd3c9ba02",
-   "title": "Brain-body MRI (rodent work)",
-   "dept": "Biological Eng",
-   "pi": "Alan Jasanoff",
-   "pay": "Credit",
-   "hrs": "11-15",
-   "remote": false,
-   "terms": "IAP/Spring/Fall",
-   "deadline": "",
-   "closed": false,
-   "prestige": 1,
-   "fit": 0,
-   "score": 10,
-   "note": "",
-   "new": false,
-   "rank": 144
-  },
-  {
-   "id": "313c6573-a816-43d5-afd2-e64305ad6031",
-   "url": "https://elx.mit.edu/experience/313c6573-a816-43d5-afd2-e64305ad6031",
-   "title": "Fluorohydride in lithium metal battery interfaces",
-   "dept": "MechE",
-   "pi": "Betar Gallant",
-   "pay": "Paid",
-   "hrs": "6-10",
-   "remote": false,
-   "terms": "IAP/Spring/Summer/Fall",
-   "deadline": "",
-   "closed": false,
-   "prestige": 1,
-   "fit": 0,
-   "score": 10,
-   "note": "",
-   "new": false,
-   "rank": 145
+   "rank": 132
   },
   {
    "id": "be3451cf-71ef-4e06-83c7-4e00bcc3abfa",
@@ -2773,7 +2526,7 @@
    "score": 10,
    "note": "",
    "new": false,
-   "rank": 146
+   "rank": 133
   },
   {
    "id": "e9a08a8d-101c-454c-bbdc-01bf153bd1b8",
@@ -2792,7 +2545,7 @@
    "score": 10,
    "note": "",
    "new": false,
-   "rank": 147
+   "rank": 134
   },
   {
    "id": "ea8f4d3e-1204-414a-a132-98609d4a332d",
@@ -2811,7 +2564,7 @@
    "score": 10,
    "note": "",
    "new": false,
-   "rank": 148
+   "rank": 135
   },
   {
    "id": "656116db-436e-4a8e-aacf-19fb4da7d747",
@@ -2830,7 +2583,7 @@
    "score": 10,
    "note": "",
    "new": false,
-   "rank": 149
+   "rank": 136
   },
   {
    "id": "c9edf00c-194e-4aa5-b223-6c7e0007a4b6",
@@ -2849,7 +2602,7 @@
    "score": 10,
    "note": "",
    "new": false,
-   "rank": 150
+   "rank": 137
   },
   {
    "id": "e82f3ff3-9384-4ba8-88c3-2af9c2956a4c",
@@ -2868,7 +2621,7 @@
    "score": 10,
    "note": "",
    "new": false,
-   "rank": 151
+   "rank": 138
   },
   {
    "id": "c1f4c631-af81-4ebf-8df7-56e638faa1ca",
@@ -2887,7 +2640,7 @@
    "score": 10,
    "note": "",
    "new": false,
-   "rank": 152
+   "rank": 139
   },
   {
    "id": "c5b1d9ad-8804-42e3-89f8-5a420f43b248",
@@ -2906,7 +2659,7 @@
    "score": 10,
    "note": "",
    "new": false,
-   "rank": 153
+   "rank": 140
   },
   {
    "id": "66122dec-b900-46a7-86da-e8f76e1c1313",
@@ -2925,45 +2678,7 @@
    "score": 10,
    "note": "",
    "new": false,
-   "rank": 154
-  },
-  {
-   "id": "41bfaf4c-9f2d-4bf9-995b-a65b8c72738c",
-   "url": "https://elx.mit.edu/experience/41bfaf4c-9f2d-4bf9-995b-a65b8c72738c",
-   "title": "Perovskite photovoltaic devices",
-   "dept": "DMSE",
-   "pi": "Brian Anthony",
-   "pay": "$16.25/h",
-   "hrs": "16-20",
-   "remote": false,
-   "terms": "Fall",
-   "deadline": "",
-   "closed": false,
-   "prestige": 1,
-   "fit": 0,
-   "score": 10,
-   "note": "",
-   "new": false,
-   "rank": 155
-  },
-  {
-   "id": "9d073375-18d6-4186-abed-9fa4982dbfbe",
-   "url": "https://elx.mit.edu/experience/9d073375-18d6-4186-abed-9fa4982dbfbe",
-   "title": "Photovoltaic film fabrication",
-   "dept": "DMSE",
-   "pi": "Brian Anthony",
-   "pay": "$16.25/h",
-   "hrs": "16-20",
-   "remote": false,
-   "terms": "Fall",
-   "deadline": "",
-   "closed": false,
-   "prestige": 1,
-   "fit": 0,
-   "score": 10,
-   "note": "",
-   "new": false,
-   "rank": 156
+   "rank": 141
   },
   {
    "id": "86039792-0cea-4702-b0d5-48f90992950c",
@@ -2982,7 +2697,7 @@
    "score": 10,
    "note": "",
    "new": false,
-   "rank": 157
+   "rank": 142
   },
   {
    "id": "e2bc6230-5d65-42de-aae7-26a589875fae",
@@ -3001,7 +2716,7 @@
    "score": 10,
    "note": "",
    "new": false,
-   "rank": 158
+   "rank": 143
   },
   {
    "id": "3c3e9271-6a7d-4d70-9c9a-b7f118dc1ed5",
@@ -3020,7 +2735,7 @@
    "score": 10,
    "note": "",
    "new": false,
-   "rank": 159
+   "rank": 144
   },
   {
    "id": "c1891917-44a9-408f-98ba-dc0c2e44cf36",
@@ -3039,7 +2754,7 @@
    "score": 10,
    "note": "",
    "new": false,
-   "rank": 160
+   "rank": 145
   },
   {
    "id": "6279e5ec-7ec1-4a06-af3a-d3f290b34603",
@@ -3058,26 +2773,7 @@
    "score": 10,
    "note": "",
    "new": false,
-   "rank": 161
-  },
-  {
-   "id": "11605dfe-ec81-4752-8c40-af9fdc0d4ca0",
-   "url": "https://elx.mit.edu/experience/11605dfe-ec81-4752-8c40-af9fdc0d4ca0",
-   "title": "Mapping Chinese Diplomacy",
-   "dept": "CIS",
-   "pi": "Mihaela Papa",
-   "pay": "$16.25/h",
-   "hrs": "6-10",
-   "remote": false,
-   "terms": "Fall",
-   "deadline": "",
-   "closed": false,
-   "prestige": 1,
-   "fit": 0,
-   "score": 10,
-   "note": "",
-   "new": false,
-   "rank": 162
+   "rank": 146
   },
   {
    "id": "c2f380b6-411e-4f65-b149-9ba0a5992187",
@@ -3096,26 +2792,7 @@
    "score": 10,
    "note": "",
    "new": false,
-   "rank": 163
-  },
-  {
-   "id": "3940a397-1752-4f39-a287-07c3d04eac67",
-   "url": "https://elx.mit.edu/experience/3940a397-1752-4f39-a287-07c3d04eac67",
-   "title": "Noninvasive Optical Imaging of Molecular Processes in the Brain",
-   "dept": "Biological Eng",
-   "pi": "Alan Jasanoff",
-   "pay": "Credit",
-   "hrs": "11-15",
-   "remote": false,
-   "terms": "Summer/Fall",
-   "deadline": "",
-   "closed": false,
-   "prestige": 1,
-   "fit": 0,
-   "score": 10,
-   "note": "",
-   "new": false,
-   "rank": 164
+   "rank": 147
   },
   {
    "id": "7ed92c24-b752-42e0-aa9f-e3e2a8b1fcb5",
@@ -3134,64 +2811,7 @@
    "score": 10,
    "note": "",
    "new": false,
-   "rank": 165
-  },
-  {
-   "id": "a32833f0-db1f-452b-8371-3058bfcb8dff",
-   "url": "https://elx.mit.edu/experience/a32833f0-db1f-452b-8371-3058bfcb8dff",
-   "title": "Mapping Liquid-Liquid Phase Separation During Crystallization",
-   "dept": "Chemical Eng",
-   "pi": "Allan Myerson",
-   "pay": "$16.25/h",
-   "hrs": "11-15",
-   "remote": false,
-   "terms": "Fall",
-   "deadline": "",
-   "closed": false,
-   "prestige": 1,
-   "fit": 0,
-   "score": 10,
-   "note": "",
-   "new": false,
-   "rank": 166
-  },
-  {
-   "id": "89816e62-cc21-4214-aa12-dff3695dd8fd",
-   "url": "https://elx.mit.edu/experience/89816e62-cc21-4214-aa12-dff3695dd8fd",
-   "title": "Continuous Crystallization of Pharmaceutical Small Molecules",
-   "dept": "Chemical Eng",
-   "pi": "Allan Myerson",
-   "pay": "$16.25/h",
-   "hrs": "11-15",
-   "remote": false,
-   "terms": "Fall",
-   "deadline": "",
-   "closed": false,
-   "prestige": 1,
-   "fit": 0,
-   "score": 10,
-   "note": "",
-   "new": false,
-   "rank": 167
-  },
-  {
-   "id": "0ab20c1b-ef33-4826-9a61-5a3e0d483efe",
-   "url": "https://elx.mit.edu/experience/0ab20c1b-ef33-4826-9a61-5a3e0d483efe",
-   "title": "Early Life Stressors, Aging and Body-Brain Circuitry",
-   "dept": "Biology",
-   "pi": "Sara Prescott",
-   "pay": "Stipend",
-   "hrs": "11-15",
-   "remote": false,
-   "terms": "IAP/Spring/Summer/Fall",
-   "deadline": "",
-   "closed": false,
-   "prestige": 1,
-   "fit": 0,
-   "score": 10,
-   "note": "",
-   "new": false,
-   "rank": 168
+   "rank": 148
   },
   {
    "id": "50398fdb-69b0-4684-8964-08a9ace23dd0",
@@ -3210,7 +2830,7 @@
    "score": 10,
    "note": "",
    "new": false,
-   "rank": 169
+   "rank": 149
   },
   {
    "id": "d54961bc-4fdd-44bc-bbf7-e47411f9efc9",
@@ -3229,7 +2849,7 @@
    "score": 10,
    "note": "",
    "new": false,
-   "rank": 170
+   "rank": 150
   },
   {
    "id": "531aa2a5-49e4-42fe-95f7-698ca213e86a",
@@ -3248,7 +2868,7 @@
    "score": 10,
    "note": "",
    "new": false,
-   "rank": 171
+   "rank": 151
   },
   {
    "id": "295f42bb-7e0e-4222-9f5f-82cd27009066",
@@ -3267,7 +2887,7 @@
    "score": 10,
    "note": "",
    "new": false,
-   "rank": 172
+   "rank": 152
   },
   {
    "id": "6811ac03-01af-49f1-b61e-723d7c5f7f8d",
@@ -3286,7 +2906,7 @@
    "score": 10,
    "note": "",
    "new": false,
-   "rank": 173
+   "rank": 153
   },
   {
    "id": "e5ab4dd8-f56d-4aaf-ba8d-978316d1b13a",
@@ -3305,7 +2925,7 @@
    "score": 10,
    "note": "",
    "new": false,
-   "rank": 174
+   "rank": 154
   },
   {
    "id": "9842748a-a3ca-42dc-af9c-1a516842266d",
@@ -3324,7 +2944,7 @@
    "score": 10,
    "note": "",
    "new": false,
-   "rank": 175
+   "rank": 155
   },
   {
    "id": "0021849e-5d79-4a9b-b523-18f6ae2b59be",
@@ -3343,7 +2963,7 @@
    "score": 10,
    "note": "",
    "new": false,
-   "rank": 176
+   "rank": 156
   },
   {
    "id": "8916a3c8-2810-43ad-a304-3b6f4dfdd35d",
@@ -3362,7 +2982,121 @@
    "score": 10,
    "note": "",
    "new": false,
-   "rank": 177
+   "rank": 157
+  },
+  {
+   "id": "59847f53-2bc8-4981-8e68-f093dc1e0a8f",
+   "url": "https://elx.mit.edu/experience/59847f53-2bc8-4981-8e68-f093dc1e0a8f",
+   "title": "MIT Climate Corps",
+   "dept": "Architecture",
+   "pi": "Miho Mazereeuw",
+   "pay": "$19/h+credit",
+   "hrs": "6-10",
+   "remote": false,
+   "terms": "IAP/Spring",
+   "deadline": "12/18/2026",
+   "closed": false,
+   "prestige": 1,
+   "fit": 0,
+   "score": 10,
+   "note": "",
+   "new": true,
+   "rank": 158
+  },
+  {
+   "id": "6bc83ecc-1df4-4503-b157-3b14fd6a67d6",
+   "url": "https://elx.mit.edu/experience/6bc83ecc-1df4-4503-b157-3b14fd6a67d6",
+   "title": "Tumor Microenvironment and Chemo Resistance in AML",
+   "dept": "Koch Institute",
+   "pi": "Michael Hemann",
+   "pay": "Paid (TBD)",
+   "hrs": "6-10",
+   "remote": false,
+   "terms": "IAP/Spring/Summer/Fall",
+   "deadline": "",
+   "closed": false,
+   "prestige": 1,
+   "fit": 0,
+   "score": 10,
+   "note": "",
+   "new": true,
+   "rank": 159
+  },
+  {
+   "id": "d961525a-5ba1-4276-be1a-d8d7c553d1ff",
+   "url": "https://elx.mit.edu/experience/d961525a-5ba1-4276-be1a-d8d7c553d1ff",
+   "title": "Humanities Curriculum",
+   "dept": "Anthropology",
+   "pi": "Susan Silbey",
+   "pay": "$16.25/h",
+   "hrs": "6-10",
+   "remote": false,
+   "terms": "Fall",
+   "deadline": "",
+   "closed": false,
+   "prestige": 1,
+   "fit": 0,
+   "score": 10,
+   "note": "",
+   "new": true,
+   "rank": 160
+  },
+  {
+   "id": "3f8ac431-3ec9-40fe-a78f-94f6daac5f18",
+   "url": "https://elx.mit.edu/experience/3f8ac431-3ec9-40fe-a78f-94f6daac5f18",
+   "title": "Rheology and Injection Mechanics of High-Concentration Drug Formulations",
+   "dept": "MechE",
+   "pi": "Giovanni Traverso",
+   "pay": "Credit",
+   "hrs": "16-20",
+   "remote": false,
+   "terms": "Spring/Fall",
+   "deadline": "",
+   "closed": false,
+   "prestige": 1,
+   "fit": 0,
+   "score": 10,
+   "note": "",
+   "new": true,
+   "rank": 161
+  },
+  {
+   "id": "3afbd316-4a9c-4ceb-9d75-8680ac5cb3a7",
+   "url": "https://elx.mit.edu/experience/3afbd316-4a9c-4ceb-9d75-8680ac5cb3a7",
+   "title": "Engineering Nature-Derived Scaffolds for Tissue Regeneration",
+   "dept": "IMES",
+   "pi": "Elazer Edelman",
+   "pay": "$16.25/h",
+   "hrs": "6-10",
+   "remote": false,
+   "terms": "IAP/Spring/Summer/Fall",
+   "deadline": "",
+   "closed": false,
+   "prestige": 1,
+   "fit": 0,
+   "score": 10,
+   "note": "",
+   "new": true,
+   "rank": 162
+  },
+  {
+   "id": "b0fedb80-a966-4dc3-8510-d34cce6b1501",
+   "url": "https://elx.mit.edu/experience/b0fedb80-a966-4dc3-8510-d34cce6b1501",
+   "title": "Cancer Cell Resistance to CAR-T Therapy",
+   "dept": "Koch Institute",
+   "pi": "Michael Hemann",
+   "pay": "$16.25/h",
+   "hrs": "11-15",
+   "remote": false,
+   "terms": "IAP/Spring/Summer/Fall",
+   "deadline": "",
+   "closed": false,
+   "prestige": 1,
+   "fit": 0,
+   "score": 10,
+   "note": "",
+   "new": true,
+   "rank": 163
   },
   {
    "id": "e84e42ab-d8d2-4dca-a6f5-7f00e830d4e1",
@@ -3381,7 +3115,7 @@
    "score": 8,
    "note": "Startup equity, not really a UROP",
    "new": false,
-   "rank": 178
+   "rank": 164
   },
   {
    "id": "7387b81c-e606-4003-9990-f97b579d890f",
@@ -3400,7 +3134,7 @@
    "score": 32,
    "note": "ML for chemistry",
    "new": false,
-   "rank": 179
+   "rank": 165
   },
   {
    "id": "5d2662bc-3258-4521-b332-09ef9ddade74",
@@ -3419,26 +3153,7 @@
    "score": 32,
    "note": "",
    "new": false,
-   "rank": 180
-  },
-  {
-   "id": "1b7014c5-a841-4b95-a6fe-2e7ce8f48790",
-   "url": "https://elx.mit.edu/experience/1b7014c5-a841-4b95-a6fe-2e7ce8f48790",
-   "title": "HCI Research for Silent-Speech Wearable",
-   "dept": "Media Lab",
-   "pi": "Joseph Paradiso",
-   "pay": "$16.25/h+credit",
-   "hrs": "6-10",
-   "remote": false,
-   "terms": "Fall",
-   "deadline": "09/13/2026",
-   "closed": true,
-   "prestige": 2,
-   "fit": 3,
-   "score": 32,
-   "note": "",
-   "new": false,
-   "rank": 181
+   "rank": 166
   },
   {
    "id": "06c8d16b-be3a-444c-90c7-4337a3bc0268",
@@ -3457,7 +3172,7 @@
    "score": 28,
    "note": "",
    "new": false,
-   "rank": 182
+   "rank": 167
   },
   {
    "id": "e8c72583-51eb-46c4-867c-9418ddbf40a8",
@@ -3476,45 +3191,7 @@
    "score": 26,
    "note": "",
    "new": false,
-   "rank": 183
-  },
-  {
-   "id": "63c4e69e-2f2b-415d-bf74-2c868807edcd",
-   "url": "https://elx.mit.edu/experience/63c4e69e-2f2b-415d-bf74-2c868807edcd",
-   "title": "Implementing a human speech perception model based on acoustic cues",
-   "dept": "RLE",
-   "pi": "Stefanie Shattuck-Hufnagel",
-   "pay": "$17/h",
-   "hrs": "16-20",
-   "remote": true,
-   "terms": "IAP/Spring/Summer/Fall",
-   "deadline": "09/14/2026",
-   "closed": true,
-   "prestige": 1,
-   "fit": 3,
-   "score": 24,
-   "note": "",
-   "new": false,
-   "rank": 184
-  },
-  {
-   "id": "54e1c4f0-d4dd-4257-9223-bdbe9380b0ed",
-   "url": "https://elx.mit.edu/experience/54e1c4f0-d4dd-4257-9223-bdbe9380b0ed",
-   "title": "Injection Molds for Self-Assembling Metamaterials",
-   "dept": "CSAIL",
-   "pi": "Mina Konakovic Lukovic",
-   "pay": "Paid (TBD)",
-   "hrs": "0-5",
-   "remote": false,
-   "terms": "Spring/Fall",
-   "deadline": "09/13/2026",
-   "closed": true,
-   "prestige": 1,
-   "fit": 2,
-   "score": 18,
-   "note": "",
-   "new": false,
-   "rank": 185
+   "rank": 168
   },
   {
    "id": "2bce4172-04f4-4222-81e8-38ad99c97e8a",
@@ -3533,45 +3210,7 @@
    "score": 18,
    "note": "",
    "new": false,
-   "rank": 186
-  },
-  {
-   "id": "dc9b1917-f3f2-4702-a613-39e52e212d76",
-   "url": "https://elx.mit.edu/experience/dc9b1917-f3f2-4702-a613-39e52e212d76",
-   "title": "Long-Term Microneedle Drug Delivery Device: Mechanical Testing",
-   "dept": "MechE",
-   "pi": "Giovanni Traverso",
-   "pay": "$16.25/h+credit",
-   "hrs": "6-10",
-   "remote": false,
-   "terms": "IAP/Spring/Fall",
-   "deadline": "09/13/2026",
-   "closed": true,
-   "prestige": 1,
-   "fit": 1,
-   "score": 14,
-   "note": "",
-   "new": false,
-   "rank": 187
-  },
-  {
-   "id": "2b8cc8e2-33ce-40fb-8a67-c420dba5ca63",
-   "url": "https://elx.mit.edu/experience/2b8cc8e2-33ce-40fb-8a67-c420dba5ca63",
-   "title": "Rebuilding the Computing and Society Concentration",
-   "dept": "STS",
-   "pi": "Dwaipayan Banerjee",
-   "pay": "$16.25/h",
-   "hrs": "6-10",
-   "remote": false,
-   "terms": "Fall",
-   "deadline": "09/08/2026",
-   "closed": true,
-   "prestige": 1,
-   "fit": 1,
-   "score": 14,
-   "note": "",
-   "new": false,
-   "rank": 188
+   "rank": 169
   },
   {
    "id": "6fdb696d-81b5-405e-9165-27aec46cd44a",
@@ -3590,26 +3229,7 @@
    "score": 14,
    "note": "",
    "new": false,
-   "rank": 189
-  },
-  {
-   "id": "7eb0ae12-33de-4829-90d7-37247a13d8bb",
-   "url": "https://elx.mit.edu/experience/7eb0ae12-33de-4829-90d7-37247a13d8bb",
-   "title": "Microbial interactions & methane emissions",
-   "dept": "VP Energy & Climate",
-   "pi": "Tanja Bosak",
-   "pay": "Paid",
-   "hrs": "16-20",
-   "remote": false,
-   "terms": "Spring/Fall",
-   "deadline": "08/30/2026",
-   "closed": true,
-   "prestige": 1,
-   "fit": 0,
-   "score": 10,
-   "note": "",
-   "new": false,
-   "rank": 190
+   "rank": 170
   }
  ]
 }
