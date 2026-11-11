@@ -28,7 +28,7 @@ current with every UROP on MIT ELx, ranked for the student (alanasng@mit.edu).
    `[...document.querySelectorAll('button')].find(b=>/Clear Filters/.test(b.innerText)).click()`, wait 4 s,
    confirm the "N experiences" count is the full set (~240+).
 3. Collect links: every `a[href^="/experience/"]` → {url, title}. Drop titles matching `/MISTI|Study Abroad/i`.
-4. Compare the UUIDs (last path segment) against `seen.json`. Only NEW UUIDs need scraping.
+4. Compare the UUIDs (last path segment) against the keys of `seen.json` ({uuid: first-seen date}). Only NEW UUIDs need scraping.
    Also note UUIDs in `scored.py` that are no longer listed (postings removed) — delete those rows.
 5. Scrape new postings with hidden same-origin iframes, **max 3 at a time** (8 froze the tab). Detect readiness with a
    MutationObserver on the iframe document (timers get throttled in background tabs): ready when body innerText
