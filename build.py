@@ -15,21 +15,28 @@ if isinstance(prev, list):  # legacy format: plain list of IDs from the 2026-09-
 first_seen = {uid: prev.get(uid, today.isoformat()) for uid in (r[1] for r in ROWS)}
 is_first_scan = not prev
 
+# Top MIT labs count as prestige on their own (the student asked to weight these up).
+TOP_LABS = ("CSAIL", "Media Lab", "LIDS", "Lincoln", "Koch", "McGovern", "Picower", "Improbable AI")
+PRESTIGE_W, FIT_W, REMOTE_BONUS = 15, 4, 2
+
 out = []
 for idx, uid, title, dept, pi, pay, hrs, loc, terms, deadline, p, f, note in ROWS:
     closed = False
     if deadline:
         m, d, y = map(int, deadline.split("/"))
         closed = datetime.date(y, m, d) < today
-    score = p * 10 + f * 4 + (2 if loc == "R" else 0)
+    if any(lab in dept for lab in TOP_LABS):
+        p = max(p, 2)
+    score = p * PRESTIGE_W + f * FIT_W + (REMOTE_BONUS if loc == "R" else 0)
     out.append(dict(
         id=uid, url=f"https://elx.mit.edu/experience/{uid}", title=title, dept=dept, pi=pi, pay=pay,
-        hrs=hrs, remote=loc == "R", terms=terms, deadline=deadline, closed=closed,
+        hrs=hrs, remote=loc == "R", iap="IAP" in terms, terms=terms, deadline=deadline, closed=closed,
         prestige=p, fit=f, score=score, note=note,
         new=not is_first_scan and first_seen[uid] == today.isoformat(),
     ))
 
-out.sort(key=lambda r: (r["closed"], -r["score"], -r["fit"]))
+# IAP-available postings first, then by score.
+out.sort(key=lambda r: (r["closed"], not r["iap"], -r["score"], -r["fit"]))
 for rank, r in enumerate(out, 1):
     r["rank"] = rank
 
@@ -40,4 +47,4 @@ html = (HERE / "template.html").read_text().replace("__DATA__", json.dumps(paylo
 (HERE / "seen.json").write_text(json.dumps(dict(sorted(first_seen.items())), indent=0))
 print(f"{len(out)} postings, {sum(r['closed'] for r in out)} closed, {sum(r['new'] for r in out)} new")
 for r in out[:15]:
-    print(f"{r['rank']:>3} {r['score']:>3} P{r['prestige']} F{r['fit']} {'R ' if r['remote'] else 'IP'} {r['title'][:70]}")
+    print(f"{r['rank']:>3} {'IAP' if r['iap'] else '   '} {r['score']:>3} P{r['prestige']} F{r['fit']} {'R ' if r['remote'] else 'IP'} {r['title'][:70]}")

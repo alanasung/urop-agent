@@ -4,7 +4,10 @@ Goal: keep `urop_shortlist.html` (published at https://claude.ai/artifact/XgZ94C
 current with every UROP on MIT ELx, ranked for the student (alanasng@mit.edu).
 
 ## Ranking rules (the student's preferences)
-- **Prestige first, then fit.** score = prestige×10 + fit×4 + 2 if remote.
+- **IAP first.** Postings open over IAP sort ahead of everything else, and the page opens filtered to IAP.
+- **Prestige outweighs fit.** score = prestige×15 + fit×4 + 2 if remote (build.py applies this).
+- Top MIT labs (CSAIL, Media Lab, LIDS, Lincoln Lab, Koch, McGovern, Picower, Improbable AI) automatically get
+  prestige ≥ 2 in build.py, so score sponsors and PIs on top of that.
 - Prestige 3: named external sponsor/partner (NASA/JPL, MIT Lincoln Lab, IBM / MIT-IBM Watson, GE Vernova,
   DARPA / DoD / US-gov STTR, CERN, Brookhaven, ISS, other big-name companies) or a Nobel-laureate PI.
   Prestige 2: marquee lab/PI (well-known CSAIL / Media Lab / EECS PIs, MGH/Harvard Med collab, FutureTech, etc.).

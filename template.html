@@ -71,6 +71,7 @@ h1{font:700 clamp(28px,4.6vw,40px)/1.05 var(--narrow);letter-spacing:-.01em;marg
 .chips{display:flex;flex-wrap:wrap;gap:6px}
 .chip{font:600 11px/1 var(--narrow);letter-spacing:.06em;text-transform:uppercase;padding:4px 7px;border-radius:5px;white-space:nowrap}
 .chip.remote{background:var(--ok-soft);color:var(--ok)}
+.chip.iap{background:var(--ink);color:var(--ground)}
 .chip.spon{background:var(--gold-soft);color:var(--gold)}
 .chip.ai{background:var(--ai-soft);color:var(--ai)}
 .chip.new{background:var(--accent);color:#fff}
@@ -102,7 +103,7 @@ footer code{font-family:var(--mono);font-size:12px}
   <header>
     <div class="eyebrow">MIT ELx · UROP postings</div>
     <h1>Your ranked UROP shortlist</h1>
-    <p class="lede">Every UROP on ELx, ranked for you. Prestige comes first: named sponsors and partners (GE&nbsp;Vernova, Lincoln Lab, NASA/JPL, US-government STTR, CERN, Brookhaven, the ISS) and marquee PIs. Then fit: AI, alignment and agents at the top, hardware welcome. Remote postings get a small bump.</p>
+    <p class="lede">Every UROP on ELx, ranked for you. Postings open over IAP come first. Prestige outweighs everything else: named sponsors and partners (Lincoln Lab, Los Alamos, NASA/JPL, US-government STTR, CERN, Brookhaven, the ISS) and top MIT labs (CSAIL, Media Lab, LIDS, Koch, McGovern, Picower). Then fit: AI, alignment and agents at the top, hardware welcome. Remote postings get a small bump.</p>
     <div class="stats" id="stats"></div>
   </header>
 
@@ -114,6 +115,7 @@ footer code{font-family:var(--mono);font-size:12px}
       <button type="button" id="v-top" aria-pressed="true">Top picks</button>
       <button type="button" id="v-all" aria-pressed="false">All</button>
     </div>
+    <label class="toggle"><input type="checkbox" id="iap"> IAP only</label>
     <label class="toggle"><input type="checkbox" id="remote"> Remote only</label>
     <label class="toggle"><input type="checkbox" id="closed"> Show closed</label>
     <span class="count" id="count"></span>
@@ -122,7 +124,7 @@ footer code{font-family:var(--mono);font-size:12px}
   <div id="bands"></div>
 
   <footer>
-    <div><b>How the score works:</b> prestige × 10 + fit × 4 + 2 if remote. Prestige 3 means a named external sponsor or partner, or a Nobel-laureate PI. Prestige 2 means a marquee lab or PI, or a Mass General collaboration. Fit 5 means core AI (agents, RL, alignment or interpretability). Fit 3 means hardware, security or systems work.</div>
+    <div><b>How the score works:</b> prestige × 15 + fit × 4 + 2 if remote, with IAP postings sorted ahead of the rest. Prestige 3 means a named external sponsor or partner, or a Nobel-laureate PI. Prestige 2 means a top MIT lab (CSAIL, Media Lab, LIDS, Koch, McGovern, Picower), a marquee PI, or a Mass General collaboration. “Top picks” shows scores of 42 and up, which takes prestige 2 or more. Fit 5 means core AI (agents, RL, alignment or interpretability). Fit 3 means hardware, security or systems work.</div>
     <div>MISTI and study-abroad programs are left out. Postings whose own application deadline has passed are hidden unless you turn on “Show closed”. Pay listed as “TBD” usually means UROP direct funding, for Spring, apply for that by Feb 2.</div>
     <div id="src"></div>
   </footer>
@@ -137,7 +139,7 @@ footer code{font-family:var(--mono);font-size:12px}
   const $ = id => document.getElementById(id);
   const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 
-  const state = {view:'top', q:'', remote:false, closed:false};
+  const state = {view:'top', q:'', iap:true, remote:false, closed:false};
   try { Object.assign(state, JSON.parse(localStorage.getItem('urop-filters')||'{}')); } catch(e){}
 
   // Key UROP office dates, from urop.mit.edu
@@ -162,6 +164,7 @@ footer code{font-family:var(--mono);font-size:12px}
     `<span><b>${P.length}</b> UROPs scanned</span>`,
     `<span><b>${open.filter(p=>p.prestige>=3).length}</b> with a named sponsor</span>`,
     `<span><b>${open.filter(p=>p.fit>=4).length}</b> strong AI fit</span>`,
+    `<span><b>${open.filter(p=>p.iap).length}</b> open over IAP</span>`,
     `<span><b>${open.filter(p=>p.remote).length}</b> remote</span>`,
     nNew ? `<span><b>${nNew}</b> new since last scan</span>` : '',
     `<span>Scanned <b>${D.scraped}</b></span>`,
@@ -169,11 +172,12 @@ footer code{font-family:var(--mono);font-size:12px}
   $('src').textContent = `Source: elx.mit.edu, ${P.length} UROP postings, scanned ${D.scraped}. Always confirm the details on ELx before you apply.`;
 
   const BANDS = [
-    {id:'a', name:'Prestige + AI', hint:'Named sponsor or Nobel PI, and real ML/AI work', test:p => p.prestige>=3 && p.fit>=3},
-    {id:'b', name:'Marquee lab, core AI', hint:'Well-known PI or lab doing agents, RL or alignment-adjacent work', test:p => p.prestige===2 && p.fit>=4},
-    {id:'c', name:'Named sponsor, other work', hint:'Prestigious partner, but hardware, physics or data work', test:p => p.prestige>=3 && p.fit<3},
-    {id:'d', name:'Strong AI fit', hint:'Good AI work at a less famous lab', test:p => p.prestige<2 && p.fit>=4},
-    {id:'e', name:'Worth a look', hint:'Adjacent: systems, hardware, security, AI policy', test:p => p.fit===3 || (p.prestige===2 && p.fit>=2)},
+    {id:'a', name:'Sponsor + AI', hint:'Named sponsor or Nobel PI, and real ML, hardware or systems work', test:p => p.prestige>=3 && p.fit>=3},
+    {id:'c', name:'Named sponsor, other work', hint:'Prestigious partner, lighter fit', test:p => p.prestige>=3},
+    {id:'b', name:'Top MIT lab, core AI', hint:'CSAIL, Media Lab and other top labs doing AI, agents or RL', test:p => p.prestige===2 && p.fit>=4},
+    {id:'d', name:'Top MIT lab, adjacent work', hint:'Hardware, systems or applied work at a top lab', test:p => p.prestige===2 && p.fit>=2},
+    {id:'e', name:'Strong AI fit, smaller lab', hint:'Good AI work outside the top labs', test:p => p.fit>=4},
+    {id:'g', name:'Worth a look', hint:'Systems, hardware, security, AI policy', test:p => p.fit===3},
     {id:'f', name:'Everything else', hint:'Off-profile: wet lab, humanities, non-technical', test:() => true},
   ];
 
@@ -184,6 +188,7 @@ footer code{font-family:var(--mono);font-size:12px}
     if (p.new) chips.push('<span class="chip new">New</span>');
     if (p.closed) chips.push(`<span class="chip shut">Closed ${esc(p.deadline)}</span>`);
     else if (p.deadline) chips.push(`<span class="chip dl">Apply by ${esc(p.deadline)}</span>`);
+    if (p.iap) chips.push('<span class="chip iap">IAP</span>');
     if (p.remote) chips.push('<span class="chip remote">Remote</span>');
     if (p.prestige>=3) chips.push('<span class="chip spon">Sponsor / partner</span>');
     if (p.fit>=5) chips.push('<span class="chip ai">Core AI</span>');
@@ -206,9 +211,10 @@ footer code{font-family:var(--mono);font-size:12px}
     const q = state.q.trim().toLowerCase();
     let list = P.filter(p =>
       (state.closed || !p.closed) &&
+      (!state.iap || p.iap) &&
       (!state.remote || p.remote) &&
       (!q || [p.title,p.pi,p.dept,p.note,p.terms].join(' ').toLowerCase().includes(q)));
-    if (state.view === 'top') list = list.filter(p => p.score >= 34);
+    if (state.view === 'top') list = list.filter(p => p.score >= 42);
     const used = new Set(); let html = '';
     for (const b of BANDS){
       const items = list.filter(p => !used.has(p.id) && b.test(p));
@@ -221,13 +227,14 @@ footer code{font-family:var(--mono);font-size:12px}
     $('count').textContent = `${list.length} shown`;
     $('v-top').setAttribute('aria-pressed', state.view==='top');
     $('v-all').setAttribute('aria-pressed', state.view==='all');
-    $('remote').checked = state.remote; $('closed').checked = state.closed; $('q').value = state.q;
+    $('iap').checked = state.iap; $('remote').checked = state.remote; $('closed').checked = state.closed; $('q').value = state.q;
     try { localStorage.setItem('urop-filters', JSON.stringify(state)); } catch(e){}
   }
 
   $('q').addEventListener('input', e => { state.q = e.target.value; render(); });
   $('v-top').addEventListener('click', () => { state.view='top'; render(); });
   $('v-all').addEventListener('click', () => { state.view='all'; render(); });
+  $('iap').addEventListener('change', e => { state.iap = e.target.checked; render(); });
   $('remote').addEventListener('change', e => { state.remote = e.target.checked; render(); });
   $('closed').addEventListener('change', e => { state.closed = e.target.checked; render(); });
   render();
